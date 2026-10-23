@@ -1,0 +1,5309 @@
+graph_name: "CNN"
+op_node {
+  op_name: "CNN__network_0_weight"
+  op_type: "const-fix"
+  op_attr {
+    key: "data"
+    value {
+      bytes_value {
+      }
+    }
+  }
+  op_attr {
+    key: "data_type"
+    value {
+      string_value: "XINT8"
+    }
+  }
+  op_attr {
+    key: "device"
+    value {
+      string_value: "DPU"
+    }
+  }
+  op_attr {
+    key: "shape"
+    value {
+      int32_vec_value {
+        value: 16
+        value: 5
+        value: 5
+        value: 1
+      }
+    }
+  }
+  output_tensor {
+    tensor_name: "CNN__network_0_weight_fix"
+    tensor_dim: 16
+    tensor_dim: 5
+    tensor_dim: 5
+    tensor_dim: 1
+    data_type: 2
+    tensor_bit_width: 8
+    tensor_attr {
+      key: "bit_width"
+      value {
+        int32_value: 8
+      }
+    }
+    tensor_attr {
+      key: "ddr_addr"
+      value {
+        int32_value: 0
+      }
+    }
+    tensor_attr {
+      key: "fix_point"
+      value {
+        int32_value: 7
+      }
+    }
+    tensor_attr {
+      key: "if_signed"
+      value {
+        bool_value: true
+      }
+    }
+    tensor_attr {
+      key: "location"
+      value {
+        int32_value: 1
+      }
+    }
+    tensor_attr {
+      key: "reg_id"
+      value {
+        int32_value: 0
+      }
+    }
+    tensor_attr {
+      key: "round_mode"
+      value {
+        string_value: "DPU_ROUND"
+      }
+    }
+    tensor_attr {
+      key: "stride"
+      value {
+        int32_vec_value {
+          value: 80
+          value: 16
+          value: 16
+          value: 1
+        }
+      }
+    }
+  }
+}
+op_node {
+  op_name: "CNN__network_0_bias"
+  op_type: "const-fix"
+  op_attr {
+    key: "data"
+    value {
+      bytes_value {
+      }
+    }
+  }
+  op_attr {
+    key: "data_type"
+    value {
+      string_value: "XINT8"
+    }
+  }
+  op_attr {
+    key: "device"
+    value {
+      string_value: "DPU"
+    }
+  }
+  op_attr {
+    key: "shape"
+    value {
+      int32_vec_value {
+        value: 16
+      }
+    }
+  }
+  output_tensor {
+    tensor_name: "CNN__network_0_bias_fix"
+    tensor_dim: 16
+    data_type: 2
+    tensor_bit_width: 8
+    tensor_attr {
+      key: "bit_width"
+      value {
+        int32_value: 8
+      }
+    }
+    tensor_attr {
+      key: "ddr_addr"
+      value {
+        int32_value: 1280
+      }
+    }
+    tensor_attr {
+      key: "fix_point"
+      value {
+        int32_value: 7
+      }
+    }
+    tensor_attr {
+      key: "if_signed"
+      value {
+        bool_value: true
+      }
+    }
+    tensor_attr {
+      key: "location"
+      value {
+        int32_value: 1
+      }
+    }
+    tensor_attr {
+      key: "reg_id"
+      value {
+        int32_value: 0
+      }
+    }
+    tensor_attr {
+      key: "round_mode"
+      value {
+        string_value: "DPU_ROUND"
+      }
+    }
+  }
+}
+op_node {
+  op_name: "CNN__network_3_weight"
+  op_type: "const-fix"
+  op_attr {
+    key: "data"
+    value {
+      bytes_value {
+      }
+    }
+  }
+  op_attr {
+    key: "data_type"
+    value {
+      string_value: "XINT8"
+    }
+  }
+  op_attr {
+    key: "device"
+    value {
+      string_value: "DPU"
+    }
+  }
+  op_attr {
+    key: "shape"
+    value {
+      int32_vec_value {
+        value: 32
+        value: 5
+        value: 5
+        value: 16
+      }
+    }
+  }
+  output_tensor {
+    tensor_name: "CNN__network_3_weight_fix"
+    tensor_dim: 32
+    tensor_dim: 5
+    tensor_dim: 5
+    tensor_dim: 16
+    data_type: 2
+    tensor_bit_width: 8
+    tensor_attr {
+      key: "bit_width"
+      value {
+        int32_value: 8
+      }
+    }
+    tensor_attr {
+      key: "ddr_addr"
+      value {
+        int32_value: 1344
+      }
+    }
+    tensor_attr {
+      key: "fix_point"
+      value {
+        int32_value: 8
+      }
+    }
+    tensor_attr {
+      key: "if_signed"
+      value {
+        bool_value: true
+      }
+    }
+    tensor_attr {
+      key: "location"
+      value {
+        int32_value: 1
+      }
+    }
+    tensor_attr {
+      key: "reg_id"
+      value {
+        int32_value: 0
+      }
+    }
+    tensor_attr {
+      key: "round_mode"
+      value {
+        string_value: "DPU_ROUND"
+      }
+    }
+    tensor_attr {
+      key: "stride"
+      value {
+        int32_vec_value {
+          value: 400
+          value: 80
+          value: 16
+          value: 1
+        }
+      }
+    }
+  }
+}
+op_node {
+  op_name: "CNN__network_3_bias"
+  op_type: "const-fix"
+  op_attr {
+    key: "data"
+    value {
+      bytes_value {
+      }
+    }
+  }
+  op_attr {
+    key: "data_type"
+    value {
+      string_value: "XINT8"
+    }
+  }
+  op_attr {
+    key: "device"
+    value {
+      string_value: "DPU"
+    }
+  }
+  op_attr {
+    key: "shape"
+    value {
+      int32_vec_value {
+        value: 32
+      }
+    }
+  }
+  output_tensor {
+    tensor_name: "CNN__network_3_bias_fix"
+    tensor_dim: 32
+    data_type: 2
+    tensor_bit_width: 8
+    tensor_attr {
+      key: "bit_width"
+      value {
+        int32_value: 8
+      }
+    }
+    tensor_attr {
+      key: "ddr_addr"
+      value {
+        int32_value: 14144
+      }
+    }
+    tensor_attr {
+      key: "fix_point"
+      value {
+        int32_value: 6
+      }
+    }
+    tensor_attr {
+      key: "if_signed"
+      value {
+        bool_value: true
+      }
+    }
+    tensor_attr {
+      key: "location"
+      value {
+        int32_value: 1
+      }
+    }
+    tensor_attr {
+      key: "reg_id"
+      value {
+        int32_value: 0
+      }
+    }
+    tensor_attr {
+      key: "round_mode"
+      value {
+        string_value: "DPU_ROUND"
+      }
+    }
+  }
+}
+op_node {
+  op_name: "CNN__network_6_weight"
+  op_type: "const-fix"
+  op_attr {
+    key: "data"
+    value {
+      bytes_value {
+      }
+    }
+  }
+  op_attr {
+    key: "data_type"
+    value {
+      string_value: "XINT8"
+    }
+  }
+  op_attr {
+    key: "device"
+    value {
+      string_value: "DPU"
+    }
+  }
+  op_attr {
+    key: "shape"
+    value {
+      int32_vec_value {
+        value: 64
+        value: 3
+        value: 3
+        value: 32
+      }
+    }
+  }
+  output_tensor {
+    tensor_name: "CNN__network_6_weight_fix"
+    tensor_dim: 64
+    tensor_dim: 3
+    tensor_dim: 3
+    tensor_dim: 32
+    data_type: 2
+    tensor_bit_width: 8
+    tensor_attr {
+      key: "bit_width"
+      value {
+        int32_value: 8
+      }
+    }
+    tensor_attr {
+      key: "ddr_addr"
+      value {
+        int32_value: 14208
+      }
+    }
+    tensor_attr {
+      key: "fix_point"
+      value {
+        int32_value: 8
+      }
+    }
+    tensor_attr {
+      key: "if_signed"
+      value {
+        bool_value: true
+      }
+    }
+    tensor_attr {
+      key: "location"
+      value {
+        int32_value: 1
+      }
+    }
+    tensor_attr {
+      key: "reg_id"
+      value {
+        int32_value: 0
+      }
+    }
+    tensor_attr {
+      key: "round_mode"
+      value {
+        string_value: "DPU_ROUND"
+      }
+    }
+    tensor_attr {
+      key: "stride"
+      value {
+        int32_vec_value {
+          value: 288
+          value: 96
+          value: 32
+          value: 1
+        }
+      }
+    }
+  }
+}
+op_node {
+  op_name: "CNN__network_6_bias"
+  op_type: "const-fix"
+  op_attr {
+    key: "data"
+    value {
+      bytes_value {
+      }
+    }
+  }
+  op_attr {
+    key: "data_type"
+    value {
+      string_value: "XINT8"
+    }
+  }
+  op_attr {
+    key: "device"
+    value {
+      string_value: "DPU"
+    }
+  }
+  op_attr {
+    key: "shape"
+    value {
+      int32_vec_value {
+        value: 64
+      }
+    }
+  }
+  output_tensor {
+    tensor_name: "CNN__network_6_bias_fix"
+    tensor_dim: 64
+    data_type: 2
+    tensor_bit_width: 8
+    tensor_attr {
+      key: "bit_width"
+      value {
+        int32_value: 8
+      }
+    }
+    tensor_attr {
+      key: "ddr_addr"
+      value {
+        int32_value: 32640
+      }
+    }
+    tensor_attr {
+      key: "fix_point"
+      value {
+        int32_value: 6
+      }
+    }
+    tensor_attr {
+      key: "if_signed"
+      value {
+        bool_value: true
+      }
+    }
+    tensor_attr {
+      key: "location"
+      value {
+        int32_value: 1
+      }
+    }
+    tensor_attr {
+      key: "reg_id"
+      value {
+        int32_value: 0
+      }
+    }
+    tensor_attr {
+      key: "round_mode"
+      value {
+        string_value: "DPU_ROUND"
+      }
+    }
+  }
+}
+op_node {
+  op_name: "CNN__network_9_weight"
+  op_type: "const-fix"
+  op_attr {
+    key: "data"
+    value {
+      bytes_value {
+      }
+    }
+  }
+  op_attr {
+    key: "data_type"
+    value {
+      string_value: "XINT8"
+    }
+  }
+  op_attr {
+    key: "device"
+    value {
+      string_value: "DPU"
+    }
+  }
+  op_attr {
+    key: "shape"
+    value {
+      int32_vec_value {
+        value: 10
+        value: 3
+        value: 3
+        value: 64
+      }
+    }
+  }
+  output_tensor {
+    tensor_name: "CNN__network_9_weight_fix"
+    tensor_dim: 10
+    tensor_dim: 3
+    tensor_dim: 3
+    tensor_dim: 64
+    data_type: 2
+    tensor_bit_width: 8
+    tensor_attr {
+      key: "bit_width"
+      value {
+        int32_value: 8
+      }
+    }
+    tensor_attr {
+      key: "ddr_addr"
+      value {
+        int32_value: 32704
+      }
+    }
+    tensor_attr {
+      key: "fix_point"
+      value {
+        int32_value: 7
+      }
+    }
+    tensor_attr {
+      key: "if_signed"
+      value {
+        bool_value: true
+      }
+    }
+    tensor_attr {
+      key: "location"
+      value {
+        int32_value: 1
+      }
+    }
+    tensor_attr {
+      key: "reg_id"
+      value {
+        int32_value: 0
+      }
+    }
+    tensor_attr {
+      key: "round_mode"
+      value {
+        string_value: "DPU_ROUND"
+      }
+    }
+    tensor_attr {
+      key: "stride"
+      value {
+        int32_vec_value {
+          value: 576
+          value: 192
+          value: 64
+          value: 1
+        }
+      }
+    }
+  }
+}
+op_node {
+  op_name: "CNN__network_9_bias"
+  op_type: "const-fix"
+  op_attr {
+    key: "data"
+    value {
+      bytes_value {
+      }
+    }
+  }
+  op_attr {
+    key: "data_type"
+    value {
+      string_value: "XINT8"
+    }
+  }
+  op_attr {
+    key: "device"
+    value {
+      string_value: "DPU"
+    }
+  }
+  op_attr {
+    key: "shape"
+    value {
+      int32_vec_value {
+        value: 10
+      }
+    }
+  }
+  output_tensor {
+    tensor_name: "CNN__network_9_bias_fix"
+    tensor_dim: 10
+    data_type: 2
+    tensor_bit_width: 8
+    tensor_attr {
+      key: "bit_width"
+      value {
+        int32_value: 8
+      }
+    }
+    tensor_attr {
+      key: "ddr_addr"
+      value {
+        int32_value: 39616
+      }
+    }
+    tensor_attr {
+      key: "fix_point"
+      value {
+        int32_value: 4
+      }
+    }
+    tensor_attr {
+      key: "if_signed"
+      value {
+        bool_value: true
+      }
+    }
+    tensor_attr {
+      key: "location"
+      value {
+        int32_value: 1
+      }
+    }
+    tensor_attr {
+      key: "reg_id"
+      value {
+        int32_value: 0
+      }
+    }
+    tensor_attr {
+      key: "round_mode"
+      value {
+        string_value: "DPU_ROUND"
+      }
+    }
+  }
+}
+op_node {
+  op_name: "CNN__input_0"
+  op_type: "data-fix"
+  op_attr {
+    key: "data_type"
+    value {
+      string_value: "XINT8"
+    }
+  }
+  op_attr {
+    key: "device"
+    value {
+      string_value: "USER"
+    }
+  }
+  op_attr {
+    key: "shape"
+    value {
+      int32_vec_value {
+        value: 1
+        value: 28
+        value: 28
+        value: 1
+      }
+    }
+  }
+  output_tensor {
+    tensor_name: "CNN__input_0_fix"
+    tensor_dim: 1
+    tensor_dim: 28
+    tensor_dim: 28
+    tensor_dim: 1
+    data_type: 2
+    tensor_bit_width: 8
+    tensor_attr {
+      key: "bit_width"
+      value {
+        int32_value: 8
+      }
+    }
+    tensor_attr {
+      key: "fix_point"
+      value {
+        int32_value: 6
+      }
+    }
+    tensor_attr {
+      key: "if_signed"
+      value {
+        bool_value: true
+      }
+    }
+    tensor_attr {
+      key: "round_mode"
+      value {
+        string_value: "DPU_ROUND"
+      }
+    }
+  }
+}
+op_node {
+  op_name: "CNN__input_0_upload_0"
+  op_type: "upload"
+  op_attr {
+    key: "device"
+    value {
+      string_value: "DPU"
+    }
+  }
+  args {
+    arg_name: "input"
+    arg_ops: "CNN__input_0"
+  }
+  output_tensor {
+    tensor_name: "CNN__input_0_fix_upload_0"
+    tensor_dim: 1
+    tensor_dim: 28
+    tensor_dim: 28
+    tensor_dim: 1
+    data_type: 2
+    tensor_bit_width: 8
+    tensor_attr {
+      key: "bit_width"
+      value {
+        int32_value: 8
+      }
+    }
+    tensor_attr {
+      key: "ddr_addr"
+      value {
+        int32_value: 64
+      }
+    }
+    tensor_attr {
+      key: "fix_point"
+      value {
+        int32_value: 6
+      }
+    }
+    tensor_attr {
+      key: "if_signed"
+      value {
+        bool_value: true
+      }
+    }
+    tensor_attr {
+      key: "location"
+      value {
+        int32_value: 1
+      }
+    }
+    tensor_attr {
+      key: "reg_id"
+      value {
+        int32_value: 2
+      }
+    }
+    tensor_attr {
+      key: "round_mode"
+      value {
+        string_value: "DPU_ROUND"
+      }
+    }
+    tensor_attr {
+      key: "stride"
+      value {
+        int32_vec_value {
+          value: 784
+          value: 28
+          value: 1
+          value: 1
+        }
+      }
+    }
+  }
+}
+op_node {
+  op_name: "CNN__CNN_Sequential_network__Conv2d_0__input_2"
+  op_type: "conv2d-fix"
+  op_attr {
+    key: "bias_term"
+    value {
+      bool_value: true
+    }
+  }
+  op_attr {
+    key: "channel_augmentation"
+    value {
+      int32_value: 1
+    }
+  }
+  op_attr {
+    key: "device"
+    value {
+      string_value: "DPU"
+    }
+  }
+  op_attr {
+    key: "dilation"
+    value {
+      int32_vec_value {
+        value: 1
+        value: 1
+      }
+    }
+  }
+  op_attr {
+    key: "group"
+    value {
+      int32_value: 1
+    }
+  }
+  op_attr {
+    key: "hsigmoid_in"
+    value {
+      int32_value: -128
+    }
+  }
+  op_attr {
+    key: "in_dim"
+    value {
+      int32_value: 1
+    }
+  }
+  op_attr {
+    key: "kernel"
+    value {
+      int32_vec_value {
+        value: 5
+        value: 5
+      }
+    }
+  }
+  op_attr {
+    key: "nonlinear"
+    value {
+      string_value: "RELU"
+    }
+  }
+  op_attr {
+    key: "out_dim"
+    value {
+      int32_value: 16
+    }
+  }
+  op_attr {
+    key: "pad"
+    value {
+      int32_vec_value {
+        value: 1
+        value: 0
+        value: 1
+        value: 0
+      }
+    }
+  }
+  op_attr {
+    key: "pad_mode"
+    value {
+      string_value: "FLOOR"
+    }
+  }
+  op_attr {
+    key: "shift_hsigmoid"
+    value {
+      int32_value: -128
+    }
+  }
+  op_attr {
+    key: "shift_hswish"
+    value {
+      int32_value: -128
+    }
+  }
+  op_attr {
+    key: "stride"
+    value {
+      int32_vec_value {
+        value: 2
+        value: 2
+      }
+    }
+  }
+  op_attr {
+    key: "workload"
+    value {
+      uint64_value: 137904
+    }
+  }
+  op_attr {
+    key: "workload_on_arch"
+    value {
+      uint64_value: 1071616
+    }
+  }
+  args {
+    arg_name: "input"
+    arg_ops: "CNN__input_0_upload_0"
+  }
+  args {
+    arg_name: "weights"
+    arg_ops: "CNN__network_0_weight"
+  }
+  args {
+    arg_name: "bias"
+    arg_ops: "CNN__network_0_bias"
+  }
+  output_tensor {
+    tensor_name: "CNN__CNN_Sequential_network__ReLU_2__input_4_fix"
+    tensor_dim: 1
+    tensor_dim: 13
+    tensor_dim: 13
+    tensor_dim: 16
+    data_type: 2
+    tensor_bit_width: 8
+    tensor_attr {
+      key: "bit_width"
+      value {
+        int32_value: 8
+      }
+    }
+    tensor_attr {
+      key: "ddr_addr"
+      value {
+        int32_value: 0
+      }
+    }
+    tensor_attr {
+      key: "fix_point"
+      value {
+        int32_value: 6
+      }
+    }
+    tensor_attr {
+      key: "if_signed"
+      value {
+        bool_value: true
+      }
+    }
+    tensor_attr {
+      key: "location"
+      value {
+        int32_value: 1
+      }
+    }
+    tensor_attr {
+      key: "reg_id"
+      value {
+        int32_value: 1
+      }
+    }
+    tensor_attr {
+      key: "round_mode"
+      value {
+        string_value: "DPU_ROUND"
+      }
+    }
+    tensor_attr {
+      key: "stride"
+      value {
+        int32_vec_value {
+          value: 2704
+          value: 208
+          value: 16
+          value: 1
+        }
+      }
+    }
+  }
+}
+op_node {
+  op_name: "CNN__CNN_Sequential_network__Conv2d_3__input_5"
+  op_type: "conv2d-fix"
+  op_attr {
+    key: "bias_term"
+    value {
+      bool_value: true
+    }
+  }
+  op_attr {
+    key: "device"
+    value {
+      string_value: "DPU"
+    }
+  }
+  op_attr {
+    key: "dilation"
+    value {
+      int32_vec_value {
+        value: 1
+        value: 1
+      }
+    }
+  }
+  op_attr {
+    key: "group"
+    value {
+      int32_value: 1
+    }
+  }
+  op_attr {
+    key: "hsigmoid_in"
+    value {
+      int32_value: -128
+    }
+  }
+  op_attr {
+    key: "in_dim"
+    value {
+      int32_value: 16
+    }
+  }
+  op_attr {
+    key: "kernel"
+    value {
+      int32_vec_value {
+        value: 5
+        value: 5
+      }
+    }
+  }
+  op_attr {
+    key: "nonlinear"
+    value {
+      string_value: "RELU"
+    }
+  }
+  op_attr {
+    key: "out_dim"
+    value {
+      int32_value: 32
+    }
+  }
+  op_attr {
+    key: "pad"
+    value {
+      int32_vec_value {
+        value: 1
+        value: 1
+        value: 1
+        value: 1
+      }
+    }
+  }
+  op_attr {
+    key: "pad_mode"
+    value {
+      string_value: "FLOOR"
+    }
+  }
+  op_attr {
+    key: "shift_hsigmoid"
+    value {
+      int32_value: -128
+    }
+  }
+  op_attr {
+    key: "shift_hswish"
+    value {
+      int32_value: -128
+    }
+  }
+  op_attr {
+    key: "stride"
+    value {
+      int32_vec_value {
+        value: 2
+        value: 2
+      }
+    }
+  }
+  op_attr {
+    key: "workload"
+    value {
+      uint64_value: 922752
+    }
+  }
+  op_attr {
+    key: "workload_on_arch"
+    value {
+      uint64_value: 1230336
+    }
+  }
+  args {
+    arg_name: "input"
+    arg_ops: "CNN__CNN_Sequential_network__Conv2d_0__input_2"
+  }
+  args {
+    arg_name: "weights"
+    arg_ops: "CNN__network_3_weight"
+  }
+  args {
+    arg_name: "bias"
+    arg_ops: "CNN__network_3_bias"
+  }
+  output_tensor {
+    tensor_name: "CNN__CNN_Sequential_network__ReLU_5__input_7_fix"
+    tensor_dim: 1
+    tensor_dim: 6
+    tensor_dim: 6
+    tensor_dim: 32
+    data_type: 2
+    tensor_bit_width: 8
+    tensor_attr {
+      key: "bit_width"
+      value {
+        int32_value: 8
+      }
+    }
+    tensor_attr {
+      key: "ddr_addr"
+      value {
+        int32_value: 2752
+      }
+    }
+    tensor_attr {
+      key: "fix_point"
+      value {
+        int32_value: 5
+      }
+    }
+    tensor_attr {
+      key: "if_signed"
+      value {
+        bool_value: true
+      }
+    }
+    tensor_attr {
+      key: "location"
+      value {
+        int32_value: 1
+      }
+    }
+    tensor_attr {
+      key: "reg_id"
+      value {
+        int32_value: 1
+      }
+    }
+    tensor_attr {
+      key: "round_mode"
+      value {
+        string_value: "DPU_ROUND"
+      }
+    }
+    tensor_attr {
+      key: "stride"
+      value {
+        int32_vec_value {
+          value: 1152
+          value: 192
+          value: 32
+          value: 1
+        }
+      }
+    }
+  }
+}
+op_node {
+  op_name: "CNN__CNN_Sequential_network__Conv2d_6__input_8"
+  op_type: "conv2d-fix"
+  op_attr {
+    key: "bias_term"
+    value {
+      bool_value: true
+    }
+  }
+  op_attr {
+    key: "device"
+    value {
+      string_value: "DPU"
+    }
+  }
+  op_attr {
+    key: "dilation"
+    value {
+      int32_vec_value {
+        value: 1
+        value: 1
+      }
+    }
+  }
+  op_attr {
+    key: "group"
+    value {
+      int32_value: 1
+    }
+  }
+  op_attr {
+    key: "hsigmoid_in"
+    value {
+      int32_value: -128
+    }
+  }
+  op_attr {
+    key: "in_dim"
+    value {
+      int32_value: 32
+    }
+  }
+  op_attr {
+    key: "kernel"
+    value {
+      int32_vec_value {
+        value: 3
+        value: 3
+      }
+    }
+  }
+  op_attr {
+    key: "nonlinear"
+    value {
+      string_value: "RELU"
+    }
+  }
+  op_attr {
+    key: "out_dim"
+    value {
+      int32_value: 64
+    }
+  }
+  op_attr {
+    key: "pad"
+    value {
+      int32_vec_value {
+        value: 1
+        value: 0
+        value: 1
+        value: 0
+      }
+    }
+  }
+  op_attr {
+    key: "pad_mode"
+    value {
+      string_value: "FLOOR"
+    }
+  }
+  op_attr {
+    key: "shift_hsigmoid"
+    value {
+      int32_value: -128
+    }
+  }
+  op_attr {
+    key: "shift_hswish"
+    value {
+      int32_value: -128
+    }
+  }
+  op_attr {
+    key: "stride"
+    value {
+      int32_vec_value {
+        value: 2
+        value: 2
+      }
+    }
+  }
+  op_attr {
+    key: "workload"
+    value {
+      uint64_value: 332352
+    }
+  }
+  op_attr {
+    key: "workload_on_arch"
+    value {
+      uint64_value: 886272
+    }
+  }
+  args {
+    arg_name: "input"
+    arg_ops: "CNN__CNN_Sequential_network__Conv2d_3__input_5"
+  }
+  args {
+    arg_name: "weights"
+    arg_ops: "CNN__network_6_weight"
+  }
+  args {
+    arg_name: "bias"
+    arg_ops: "CNN__network_6_bias"
+  }
+  output_tensor {
+    tensor_name: "CNN__CNN_Sequential_network__ReLU_8__input_10_fix"
+    tensor_dim: 1
+    tensor_dim: 3
+    tensor_dim: 3
+    tensor_dim: 64
+    data_type: 2
+    tensor_bit_width: 8
+    tensor_attr {
+      key: "bit_width"
+      value {
+        int32_value: 8
+      }
+    }
+    tensor_attr {
+      key: "ddr_addr"
+      value {
+        int32_value: 0
+      }
+    }
+    tensor_attr {
+      key: "fix_point"
+      value {
+        int32_value: 5
+      }
+    }
+    tensor_attr {
+      key: "if_signed"
+      value {
+        bool_value: true
+      }
+    }
+    tensor_attr {
+      key: "location"
+      value {
+        int32_value: 1
+      }
+    }
+    tensor_attr {
+      key: "reg_id"
+      value {
+        int32_value: 1
+      }
+    }
+    tensor_attr {
+      key: "round_mode"
+      value {
+        string_value: "DPU_ROUND"
+      }
+    }
+    tensor_attr {
+      key: "stride"
+      value {
+        int32_vec_value {
+          value: 576
+          value: 192
+          value: 64
+          value: 1
+        }
+      }
+    }
+  }
+}
+op_node {
+  op_name: "CNN__CNN_Sequential_network__Conv2d_9__input"
+  op_type: "conv2d-fix"
+  op_attr {
+    key: "bias_term"
+    value {
+      bool_value: true
+    }
+  }
+  op_attr {
+    key: "device"
+    value {
+      string_value: "DPU"
+    }
+  }
+  op_attr {
+    key: "dilation"
+    value {
+      int32_vec_value {
+        value: 1
+        value: 1
+      }
+    }
+  }
+  op_attr {
+    key: "group"
+    value {
+      int32_value: 1
+    }
+  }
+  op_attr {
+    key: "hsigmoid_in"
+    value {
+      int32_value: -128
+    }
+  }
+  op_attr {
+    key: "in_dim"
+    value {
+      int32_value: 64
+    }
+  }
+  op_attr {
+    key: "kernel"
+    value {
+      int32_vec_value {
+        value: 3
+        value: 3
+      }
+    }
+  }
+  op_attr {
+    key: "nonlinear"
+    value {
+      string_value: "NONE"
+    }
+  }
+  op_attr {
+    key: "out_dim"
+    value {
+      int32_value: 10
+    }
+  }
+  op_attr {
+    key: "pad"
+    value {
+      int32_vec_value {
+        value: 0
+        value: 0
+        value: 0
+        value: 0
+      }
+    }
+  }
+  op_attr {
+    key: "pad_mode"
+    value {
+      string_value: "FLOOR"
+    }
+  }
+  op_attr {
+    key: "shift_hsigmoid"
+    value {
+      int32_value: -128
+    }
+  }
+  op_attr {
+    key: "shift_hswish"
+    value {
+      int32_value: -128
+    }
+  }
+  op_attr {
+    key: "stride"
+    value {
+      int32_vec_value {
+        value: 1
+        value: 1
+      }
+    }
+  }
+  op_attr {
+    key: "workload"
+    value {
+      uint64_value: 11530
+    }
+  }
+  op_attr {
+    key: "workload_on_arch"
+    value {
+      uint64_value: 295168
+    }
+  }
+  args {
+    arg_name: "input"
+    arg_ops: "CNN__CNN_Sequential_network__Conv2d_6__input_8"
+  }
+  args {
+    arg_name: "weights"
+    arg_ops: "CNN__network_9_weight"
+  }
+  args {
+    arg_name: "bias"
+    arg_ops: "CNN__network_9_bias"
+  }
+  output_tensor {
+    tensor_name: "CNN__CNN_Sequential_network__Conv2d_9__input_fix"
+    tensor_dim: 1
+    tensor_dim: 1
+    tensor_dim: 1
+    tensor_dim: 10
+    data_type: 2
+    tensor_bit_width: 8
+    tensor_attr {
+      key: "bit_width"
+      value {
+        int32_value: 8
+      }
+    }
+    tensor_attr {
+      key: "ddr_addr"
+      value {
+        int32_value: 0
+      }
+    }
+    tensor_attr {
+      key: "fix_point"
+      value {
+        int32_value: 4
+      }
+    }
+    tensor_attr {
+      key: "if_signed"
+      value {
+        bool_value: true
+      }
+    }
+    tensor_attr {
+      key: "location"
+      value {
+        int32_value: 1
+      }
+    }
+    tensor_attr {
+      key: "reg_id"
+      value {
+        int32_value: 3
+      }
+    }
+    tensor_attr {
+      key: "round_mode"
+      value {
+        string_value: "DPU_ROUND"
+      }
+    }
+    tensor_attr {
+      key: "stride"
+      value {
+        int32_vec_value {
+          value: 10
+          value: 10
+          value: 10
+          value: 1
+        }
+      }
+    }
+  }
+}
+op_node {
+  op_name: "CNN__CNN_Sequential_network__Flatten_11__508"
+  op_type: "reshape-fix"
+  op_attr {
+    key: "device"
+    value {
+      string_value: "DPU"
+    }
+  }
+  op_attr {
+    key: "shape"
+    value {
+      int32_vec_value {
+        value: 1
+        value: 10
+      }
+    }
+  }
+  args {
+    arg_name: "input"
+    arg_ops: "CNN__CNN_Sequential_network__Conv2d_9__input"
+  }
+  output_tensor {
+    tensor_name: "CNN__CNN_Sequential_network__Flatten_11__508_fix_download_0"
+    tensor_dim: 1
+    tensor_dim: 10
+    data_type: 2
+    tensor_bit_width: 8
+    tensor_attr {
+      key: "bit_width"
+      value {
+        int32_value: 8
+      }
+    }
+    tensor_attr {
+      key: "ddr_addr"
+      value {
+        int32_value: 0
+      }
+    }
+    tensor_attr {
+      key: "fix_point"
+      value {
+        int32_value: 4
+      }
+    }
+    tensor_attr {
+      key: "if_signed"
+      value {
+        bool_value: true
+      }
+    }
+    tensor_attr {
+      key: "location"
+      value {
+        int32_value: 1
+      }
+    }
+    tensor_attr {
+      key: "reg_id"
+      value {
+        int32_value: 3
+      }
+    }
+    tensor_attr {
+      key: "round_mode"
+      value {
+        string_value: "DPU_ROUND"
+      }
+    }
+    tensor_attr {
+      key: "stride"
+      value {
+        int32_vec_value {
+          value: 10
+          value: 1
+        }
+      }
+    }
+  }
+}
+op_node {
+  op_name: "CNN__CNN_Sequential_network__Flatten_11__508_download_0"
+  op_type: "download"
+  op_attr {
+    key: "device"
+    value {
+      string_value: "DPU"
+    }
+  }
+  args {
+    arg_name: "input"
+    arg_ops: "CNN__CNN_Sequential_network__Flatten_11__508"
+  }
+  output_tensor {
+    tensor_name: "CNN__CNN_Sequential_network__Flatten_11__508_fix"
+    tensor_dim: 1
+    tensor_dim: 10
+    data_type: 2
+    tensor_bit_width: 8
+    tensor_attr {
+      key: "bit_width"
+      value {
+        int32_value: 8
+      }
+    }
+    tensor_attr {
+      key: "fix_point"
+      value {
+        int32_value: 4
+      }
+    }
+    tensor_attr {
+      key: "if_signed"
+      value {
+        bool_value: true
+      }
+    }
+    tensor_attr {
+      key: "round_mode"
+      value {
+        string_value: "DPU_ROUND"
+      }
+    }
+  }
+}
+op_node {
+  op_name: "CNN__CNN_Sequential_network__Flatten_11__508_fix_"
+  op_type: "fix2float"
+  op_attr {
+    key: "bit_width"
+    value {
+      int32_value: 8
+    }
+  }
+  op_attr {
+    key: "device"
+    value {
+      string_value: "CPU"
+    }
+  }
+  op_attr {
+    key: "fix_point"
+    value {
+      int32_value: 4
+    }
+  }
+  op_attr {
+    key: "if_signed"
+    value {
+      bool_value: true
+    }
+  }
+  op_attr {
+    key: "round_mode"
+    value {
+      string_value: "DPU_ROUND"
+    }
+  }
+  args {
+    arg_name: "input"
+    arg_ops: "CNN__CNN_Sequential_network__Flatten_11__508_download_0"
+  }
+  output_tensor {
+    tensor_name: "CNN__CNN_Sequential_network__Flatten_11__508_fix_"
+    tensor_dim: 1
+    tensor_dim: 10
+    data_type: 4
+    tensor_bit_width: 32
+  }
+}
+subg_root {
+  subgraph_name: "root"
+  subg_attr {
+    key: "workload"
+    value {
+      uint64_value: 1404538
+    }
+  }
+  subg_attr {
+    key: "workload_on_arch"
+    value {
+      uint64_value: 3483392
+    }
+  }
+  subg_child {
+    subgraph_name: "subgraph_CNN__input_0"
+    op_name: "CNN__input_0"
+    subg_attr {
+      key: "device"
+      value {
+        string_value: "USER"
+      }
+    }
+    subg_attr {
+      key: "workload"
+      value {
+        uint64_value: 0
+      }
+    }
+    subg_attr {
+      key: "workload_on_arch"
+      value {
+        uint64_value: 0
+      }
+    }
+  }
+  subg_child {
+    subgraph_name: "subgraph_CNN__CNN_Sequential_network__Conv2d_0__input_2"
+    subg_attr {
+      key: "children_topological_sort"
+      value {
+        string_vec_value {
+          value: "subgraph_CNN__CNN_Sequential_network__Conv2d_0__input_2"
+          value: "subgraph_CNN__CNN_Sequential_network__Conv2d_3__input_5"
+          value: "subgraph_CNN__CNN_Sequential_network__Conv2d_6__input_8"
+          value: "subgraph_CNN__CNN_Sequential_network__Conv2d_9__input"
+          value: "subgraph_CNN__CNN_Sequential_network__Flatten_11__508"
+        }
+      }
+    }
+    subg_attr {
+      key: "debug_mode"
+      value {
+        string_value: "function"
+      }
+    }
+    subg_attr {
+      key: "device"
+      value {
+        string_value: "DPU"
+      }
+    }
+    subg_attr {
+      key: "dpu_fingerprint"
+      value {
+        uint64_value: 432908583806992945
+      }
+    }
+    subg_attr {
+      key: "dpu_name"
+      value {
+        string_value: "DPUCVDX8G_ISA2_C32B3"
+      }
+    }
+    subg_attr {
+      key: "if_prefetch"
+      value {
+        bool_value: false
+      }
+    }
+    subg_attr {
+      key: "mc_code"
+      value {
+        bytes_value {
+          value: bytes = 976 md5sum = e23d16e2e8ce97940ba5a48669af5230
+          head: 
+          0x6511ef18c0d0 00000000: 0040 1801 0f00 0000 0f00 0001 0005 0000
+          0x6511ef18c0e0 00000010: 0000 0000 0ce0 0090 001c 4010 1900 4900
+          0x6511ef18c0f0 00000020: 010c 0010 0003 8005 0400 0000 0000 1401
+          0x6511ef18c100 00000030: 0f00 0000 0f00 0100 0000 0000 04c0 0300
+          0x6511ef18c110 00000040: 0000 1201 0100 0004 0400 0300 3f00 0040
+          0x6511ef18c120 00000050: 0000 0000 0040 1201 0100 0004 0400 0300
+          0x6511ef18c130 00000060: 7700 0040 0000 0000 0080 1201 0100 0004
+          0x6511ef18c140 00000070: 0400 0300 af00 0040 0000 0000 00c0 1201
+          0x6511ef18c150 00000080: 0100 0004 0400 0300 e700 0040 0000 0000
+          0x6511ef18c160 00000090: 0000 1301 0100 0004 0400 0300 1f01 0040
+          tail: 
+          0x6511ef18c400 00000000: 1ac0 0100 3280 8404 00c0 0d20 00c0 0000
+          0x6511ef18c410 00000010: 5b00 5401 1f00 0000 1f00 0201 805b 0000
+          0x6511ef18c420 00000020: 11c0 0700 0200 1081 1ac0 0100 3280 8404
+          0x6511ef18c430 00000030: 00c0 1620 0040 0100 0740 1805 0900 0000
+          0x6511ef18c440 00000040: 0900 0001 c09a 0000 0000 0000 0000 0190
+          0x6511ef18c450 00000050: 0324 2200 0100 0000 0104 4000 0307 0000
+          0x6511ef18c460 00000060: 2300 0000 7f00 5401 3f00 0000 3f00 0203
+          0x6511ef18c470 00000070: c07f 0000 23c0 0200 0000 2281 0000 0000
+          0x6511ef18c480 00000080: 0080 8000 00c0 1f00 00c0 0100 0000 2246
+          0x6511ef18c490 00000090: 0000 0000 0900 0001 0000 0060 0000 2072
+          
+        }
+      }
+    }
+    subg_attr {
+      key: "mc_code_preload"
+      value {
+        bytes_value {
+        }
+      }
+    }
+    subg_attr {
+      key: "reg_id_to_context_type"
+      value {
+        map_string_2_string_value {
+          value {
+            key: "REG_0"
+            value: "CONST"
+          }
+          value {
+            key: "REG_1"
+            value: "DATA"
+          }
+          value {
+            key: "REG_2"
+            value: "DATA"
+          }
+          value {
+            key: "REG_3"
+            value: "DATA"
+          }
+        }
+      }
+    }
+    subg_attr {
+      key: "reg_id_to_context_type_v2"
+      value {
+        map_string_2_string_value {
+          value {
+            key: "REG_0"
+            value: "CONST"
+          }
+          value {
+            key: "REG_1"
+            value: "WORKSPACE"
+          }
+          value {
+            key: "REG_2"
+            value: "INTERFACE"
+          }
+          value {
+            key: "REG_3"
+            value: "INTERFACE"
+          }
+        }
+      }
+    }
+    subg_attr {
+      key: "reg_id_to_hw_segment"
+      value {
+        map_string_2_string_value {
+          value {
+            key: "REG_0"
+            value: "W0"
+          }
+          value {
+            key: "REG_1"
+            value: "D0"
+          }
+          value {
+            key: "REG_2"
+            value: "D0"
+          }
+          value {
+            key: "REG_3"
+            value: "D0"
+          }
+        }
+      }
+    }
+    subg_attr {
+      key: "reg_id_to_parameter_value"
+      value {
+        map_string_2_bytes_value {
+          value {
+            key: "REG_0"
+            value {
+              value: bytes = 39680 md5sum = 893bf344aba3c56b4c24092e8ee748c4
+              head: 
+              0x6511ef1adf50 00000000: f904 01f5 1a00 0000 0000 0000 0000 0000
+              0x6511ef1adf60 00000010: 1322 06e2 ca00 0000 0000 0000 0000 0000
+              0x6511ef1adf70 00000020: d9e2 ebd8 0400 0000 0000 0000 0000 0000
+              0x6511ef1adf80 00000030: d40d e928 1900 0000 0000 0000 0000 0000
+              0x6511ef1adf90 00000040: 1e0f 2324 0d00 0000 0000 0000 0000 0000
+              0x6511ef1adfa0 00000050: 1818 fada eb00 0000 0000 0000 0000 0000
+              0x6511ef1adfb0 00000060: ecd7 d3ef db00 0000 0000 0000 0000 0000
+              0x6511ef1adfc0 00000070: e71c 21f9 e800 0000 0000 0000 0000 0000
+              0x6511ef1adfd0 00000080: 29f1 18ec 1d00 0000 0000 0000 0000 0000
+              0x6511ef1adfe0 00000090: 04fd 27e0 cc00 0000 0000 0000 0000 0000
+              tail: 
+              0x6511ef1b79b0 00000000: 0000 0000 0000 0000 0000 0000 0000 0000
+              0x6511ef1b79c0 00000010: 0000 0000 0000 0000 0000 0000 0000 0000
+              0x6511ef1b79d0 00000020: f6eb d602 0909 00e3 eb0a 01f4 02f5 13ee
+              0x6511ef1b79e0 00000030: 0108 dffb fd03 0403 e308 0104 fb00 e3f8
+              0x6511ef1b79f0 00000040: 0000 0000 0000 0000 0000 0000 0000 0000
+              0x6511ef1b7a00 00000050: 0000 0000 0000 0000 0000 0000 0000 0000
+              0x6511ef1b7a10 00000060: 3f24 4951 5657 4a50 643d 0000 0000 0000
+              0x6511ef1b7a20 00000070: 0000 0000 0000 0000 0000 0000 0000 0000
+              0x6511ef1b7a30 00000080: 0000 0000 0000 0000 0000 0000 0000 0000
+              0x6511ef1b7a40 00000090: 0000 0000 0000 0000 0000 0000 0000 0000
+              
+            }
+          }
+        }
+      }
+    }
+    subg_attr {
+      key: "reg_id_to_size"
+      value {
+        map_string_2_int32_value {
+          value {
+            key: "REG_0"
+            value: 39680
+          }
+          value {
+            key: "REG_1"
+            value: 3904
+          }
+          value {
+            key: "REG_2"
+            value: 896
+          }
+          value {
+            key: "REG_3"
+            value: 64
+          }
+        }
+      }
+    }
+    subg_attr {
+      key: "runner"
+      value {
+        map_string_2_string_value {
+          value {
+            key: "ref"
+            value: "libvart-cpu-runner.so"
+          }
+          value {
+            key: "run"
+            value: "libvart-dpu-runner.so"
+          }
+          value {
+            key: "sim"
+            value: "libvart-sim-runner.so"
+          }
+        }
+      }
+    }
+    subg_attr {
+      key: "workload"
+      value {
+        uint64_value: 1404538
+      }
+    }
+    subg_attr {
+      key: "workload_on_arch"
+      value {
+        uint64_value: 3483392
+      }
+    }
+    subg_child {
+      subgraph_name: "subgraph_CNN__input_0_upload_0"
+      op_name: "CNN__input_0_upload_0"
+      subg_attr {
+        key: "skip_code_gen"
+        value {
+          bool_value: true
+        }
+      }
+      subg_attr {
+        key: "workload"
+        value {
+          uint64_value: 0
+        }
+      }
+      subg_attr {
+        key: "workload_on_arch"
+        value {
+          uint64_value: 0
+        }
+      }
+    }
+    subg_child {
+      subgraph_name: "subgraph_CNN__CNN_Sequential_network__Conv2d_0__input_2"
+      op_name: "CNN__network_0_weight"
+      op_name: "CNN__network_0_bias"
+      op_name: "CNN__CNN_Sequential_network__Conv2d_0__input_2"
+      subg_attr {
+        key: "mc_code"
+        value {
+          bytes_value {
+            value: bytes = 876 md5sum = 8761d01cd5eacf3f2f57fd0d809230d3
+            head: 
+            0x6511ef18e0d0 00000000: 0040 1801 0f00 0000 0f00 0001 0005 0000
+            0x6511ef18e0e0 00000010: 0000 0000 0ce0 0090 001c 4010 1900 4900
+            0x6511ef18e0f0 00000020: 010c 0010 0003 8005 0400 0000 0000 1401
+            0x6511ef18e100 00000030: 0f00 0000 0f00 0100 0000 0000 04c0 0300
+            0x6511ef18e110 00000040: 0000 1201 0100 0004 0400 0300 3f00 0040
+            0x6511ef18e120 00000050: 0000 0000 0040 1201 0100 0004 0400 0300
+            0x6511ef18e130 00000060: 7700 0040 0000 0000 0080 1201 0100 0004
+            0x6511ef18e140 00000070: 0400 0300 af00 0040 0000 0000 00c0 1201
+            0x6511ef18e150 00000080: 0100 0004 0400 0300 e700 0040 0000 0000
+            0x6511ef18e160 00000090: 0000 1301 0100 0004 0400 0300 1f01 0040
+            tail: 
+            0x6511ef18e39c 00000000: 0f00 0000 0f00 0301 7002 0020 0080 2042
+            0x6511ef18e3ac 00000010: 0f00 0000 0f00 0301 4003 0020 1a80 2042
+            0x6511ef18e3bc 00000020: 0f00 0000 0f00 0301 1004 0020 00c0 2042
+            0x6511ef18e3cc 00000030: 0f00 0000 0f00 0301 e004 0020 1ac0 2042
+            0x6511ef18e3dc 00000040: 0f00 0000 0f00 0301 b005 0020 0000 2142
+            0x6511ef18e3ec 00000050: 0f00 0000 0f00 0301 8006 0020 1a00 2142
+            0x6511ef18e3fc 00000060: 0f00 0000 0f00 0301 5007 0020 0040 2142
+            0x6511ef18e40c 00000070: 0f00 0000 0f00 0301 2008 0020 1a40 2142
+            0x6511ef18e41c 00000080: 0f00 0000 0f00 0301 f008 0020 0080 2142
+            0x6511ef18e42c 00000090: 0f00 0000 0f00 0301 c009 0020 0000 2072
+            
+          }
+        }
+      }
+      subg_attr {
+        key: "mc_code_preload"
+        value {
+          bytes_value {
+          }
+        }
+      }
+      subg_attr {
+        key: "workload"
+        value {
+          uint64_value: 137904
+        }
+      }
+      subg_attr {
+        key: "workload_on_arch"
+        value {
+          uint64_value: 1071616
+        }
+      }
+    }
+    subg_child {
+      subgraph_name: "subgraph_CNN__CNN_Sequential_network__Conv2d_3__input_5"
+      op_name: "CNN__network_3_weight"
+      op_name: "CNN__network_3_bias"
+      op_name: "CNN__CNN_Sequential_network__Conv2d_3__input_5"
+      subg_attr {
+        key: "mc_code"
+        value {
+          bytes_value {
+            value: bytes = 444 md5sum = 098f1fc1ffb189b9b3092894f833c03e
+            head: 
+            0x6511ef18e7c0 00000000: 0000 1001 0f00 0000 0f00 0301 0000 0020
+            0x6511ef18e7d0 00000010: 0000 0000 1a00 1001 0f00 0000 0f00 0301
+            0x6511ef18e7e0 00000020: d000 0020 0000 0000 0040 1001 0f00 0000
+            0x6511ef18e7f0 00000030: 0f00 0301 a001 0020 0000 0000 1a40 1001
+            0x6511ef18e800 00000040: 0f00 0000 0f00 0301 7002 0020 0000 0000
+            0x6511ef18e810 00000050: 0080 1001 0f00 0000 0f00 0301 4003 0020
+            0x6511ef18e820 00000060: 0000 0000 1a80 1001 0f00 0000 0f00 0301
+            0x6511ef18e830 00000070: 1004 0020 0000 0000 00c0 1001 0f00 0000
+            0x6511ef18e840 00000080: 0f00 0301 e004 0020 0000 0000 1ac0 1001
+            0x6511ef18e850 00000090: 0f00 0000 0f00 0301 b005 0020 0000 0000
+            tail: 
+            0x6511ef18e8dc 00000000: 0124 4411 0b00 0900 0104 0010 0002 0000
+            0x6511ef18e8ec 00000010: 1800 0000 0500 5401 0f00 0000 0f00 0600
+            0x6511ef18e8fc 00000020: 4005 0000 18c0 0700 3400 2081 cadf 1100
+            0x6511ef18e90c 00000030: fedf c404 0040 0150 0040 0000 3400 2046
+            0x6511ef18e91c 00000040: 1f00 0000 1f40 0101 c00a 0020 4000 2042
+            0x6511ef18e92c 00000050: 1f00 0000 1f40 0101 800b 0020 3440 2042
+            0x6511ef18e93c 00000060: 1f00 0000 1f40 0101 400c 0020 4040 2042
+            0x6511ef18e94c 00000070: 1f00 0000 1f40 0101 000d 0020 3480 2042
+            0x6511ef18e95c 00000080: 1f00 0000 1f40 0101 c00d 0020 4080 2042
+            0x6511ef18e96c 00000090: 1f00 0000 1f40 0101 800e 0020 0000 2072
+            
+          }
+        }
+      }
+      subg_attr {
+        key: "mc_code_preload"
+        value {
+          bytes_value {
+          }
+        }
+      }
+      subg_attr {
+        key: "workload"
+        value {
+          uint64_value: 922752
+        }
+      }
+      subg_attr {
+        key: "workload_on_arch"
+        value {
+          uint64_value: 1230336
+        }
+      }
+    }
+    subg_child {
+      subgraph_name: "subgraph_CNN__CNN_Sequential_network__Conv2d_6__input_8"
+      op_name: "CNN__network_6_weight"
+      op_name: "CNN__network_6_bias"
+      op_name: "CNN__CNN_Sequential_network__Conv2d_6__input_8"
+      subg_attr {
+        key: "mc_code"
+        value {
+          bytes_value {
+            value: bytes = 296 md5sum = 177812a75a762200fa5eb4c10f729f77
+            head: 
+            0x6511ef18eec0 00000000: 3400 1001 1f00 0000 1f40 0101 c00a 0020
+            0x6511ef18eed0 00000010: 0000 0000 4000 1001 1f00 0000 1f40 0101
+            0x6511ef18eee0 00000020: 800b 0020 0000 0000 3440 1001 1f00 0000
+            0x6511ef18eef0 00000030: 1f40 0101 400c 0020 0000 0000 4040 1001
+            0x6511ef18ef00 00000040: 1f00 0000 1f40 0101 000d 0020 0000 0000
+            0x6511ef18ef10 00000050: 3480 1001 1f00 0000 1f40 0101 c00d 0020
+            0x6511ef18ef20 00000060: 0000 0000 4080 1001 1f00 0000 1f40 0101
+            0x6511ef18ef30 00000070: 800e 0020 0000 0000 0340 1801 3f00 0000
+            0x6511ef18ef40 00000080: 3f00 0001 807f 0000 0000 0000 0b00 0190
+            0x6511ef18ef50 00000090: 0120 2211 0b00 4900 0304 0000 0105 0000
+            tail: 
+            0x6511ef18ef48 00000000: 0000 0000 0b00 0190 0120 2211 0b00 4900
+            0x6511ef18ef58 00000010: 0304 0000 0105 0000 1100 0000 3700 5401
+            0x6511ef18ef68 00000020: 1f00 0000 1f00 0201 8037 0000 11c0 0700
+            0x6511ef18ef78 00000030: 0000 0081 1ac0 0100 3280 8404 00c0 0d20
+            0x6511ef18ef88 00000040: 00c0 0000 5b00 5401 1f00 0000 1f00 0201
+            0x6511ef18ef98 00000050: 805b 0000 11c0 0700 0200 2081 1ac0 0100
+            0x6511ef18efa8 00000060: 3280 8404 00c0 1620 0040 0100 0000 2046
+            0x6511ef18efb8 00000070: 3f00 0000 3f80 0003 0000 0020 0040 2042
+            0x6511ef18efc8 00000080: 3f00 0000 3f80 0003 c000 0020 0080 2042
+            0x6511ef18efd8 00000090: 3f00 0000 3f80 0003 8001 0020 0000 2072
+            
+          }
+        }
+      }
+      subg_attr {
+        key: "mc_code_preload"
+        value {
+          bytes_value {
+          }
+        }
+      }
+      subg_attr {
+        key: "workload"
+        value {
+          uint64_value: 332352
+        }
+      }
+      subg_attr {
+        key: "workload_on_arch"
+        value {
+          uint64_value: 886272
+        }
+      }
+    }
+    subg_child {
+      subgraph_name: "subgraph_CNN__CNN_Sequential_network__Conv2d_9__input"
+      op_name: "CNN__network_9_weight"
+      op_name: "CNN__network_9_bias"
+      op_name: "CNN__CNN_Sequential_network__Conv2d_9__input"
+      subg_attr {
+        key: "mc_code"
+        value {
+          bytes_value {
+            value: bytes = 164 md5sum = 536985063f22e1f8d3331dd3e239ce80
+            head: 
+            0x6511ef18f1f0 00000000: 0000 1001 3f00 0000 3f80 0003 0000 0020
+            0x6511ef18f200 00000010: 0000 0000 0040 1001 3f00 0000 3f80 0003
+            0x6511ef18f210 00000020: c000 0020 0000 0000 0080 1001 3f00 0000
+            0x6511ef18f220 00000030: 3f80 0003 8001 0020 0000 0000 0740 1801
+            0x6511ef18f230 00000040: 0900 0000 0900 0001 c09a 0000 0000 0000
+            0x6511ef18f240 00000050: 0000 0190 0324 2200 0100 0000 0104 4000
+            0x6511ef18f250 00000060: 0307 0000 2300 0000 7f00 5401 3f00 0000
+            0x6511ef18f260 00000070: 3f00 0203 c07f 0000 23c0 0200 0000 2281
+            0x6511ef18f270 00000080: 0000 0000 0080 8000 00c0 1f00 00c0 0100
+            0x6511ef18f280 00000090: 0000 2246 0000 0000 0900 0001 0000 0060
+            tail: 
+            0x6511ef18f1f4 00000000: 3f00 0000 3f80 0003 0000 0020 0000 0000
+            0x6511ef18f204 00000010: 0040 1001 3f00 0000 3f80 0003 c000 0020
+            0x6511ef18f214 00000020: 0000 0000 0080 1001 3f00 0000 3f80 0003
+            0x6511ef18f224 00000030: 8001 0020 0000 0000 0740 1801 0900 0000
+            0x6511ef18f234 00000040: 0900 0001 c09a 0000 0000 0000 0000 0190
+            0x6511ef18f244 00000050: 0324 2200 0100 0000 0104 4000 0307 0000
+            0x6511ef18f254 00000060: 2300 0000 7f00 5401 3f00 0000 3f00 0203
+            0x6511ef18f264 00000070: c07f 0000 23c0 0200 0000 2281 0000 0000
+            0x6511ef18f274 00000080: 0080 8000 00c0 1f00 00c0 0100 0000 2246
+            0x6511ef18f284 00000090: 0000 0000 0900 0001 0000 0060 0000 2072
+            
+          }
+        }
+      }
+      subg_attr {
+        key: "mc_code_preload"
+        value {
+          bytes_value {
+          }
+        }
+      }
+      subg_attr {
+        key: "workload"
+        value {
+          uint64_value: 11530
+        }
+      }
+      subg_attr {
+        key: "workload_on_arch"
+        value {
+          uint64_value: 295168
+        }
+      }
+    }
+    subg_child {
+      subgraph_name: "subgraph_CNN__CNN_Sequential_network__Flatten_11__508"
+      op_name: "CNN__CNN_Sequential_network__Flatten_11__508"
+      subg_attr {
+        key: "skip_code_gen"
+        value {
+          bool_value: true
+        }
+      }
+      subg_attr {
+        key: "workload"
+        value {
+          uint64_value: 0
+        }
+      }
+      subg_attr {
+        key: "workload_on_arch"
+        value {
+          uint64_value: 0
+        }
+      }
+    }
+    subg_child {
+      subgraph_name: "subgraph_CNN__CNN_Sequential_network__Flatten_11__508_download_0"
+      op_name: "CNN__CNN_Sequential_network__Flatten_11__508_download_0"
+      subg_attr {
+        key: "workload"
+        value {
+          uint64_value: 0
+        }
+      }
+      subg_attr {
+        key: "workload_on_arch"
+        value {
+          uint64_value: 0
+        }
+      }
+    }
+  }
+  subg_child {
+    subgraph_name: "subgraph_CNN__CNN_Sequential_network__Flatten_11__508_fix_"
+    op_name: "CNN__CNN_Sequential_network__Flatten_11__508_fix_"
+    subg_attr {
+      key: "device"
+      value {
+        string_value: "CPU"
+      }
+    }
+    subg_attr {
+      key: "runner"
+      value {
+        map_string_2_string_value {
+          value {
+            key: "ref"
+            value: "libvart-cpu-runner.so"
+          }
+          value {
+            key: "run"
+            value: "libvart-cpu-runner.so"
+          }
+          value {
+            key: "sim"
+            value: "libvart-cpu-runner.so"
+          }
+        }
+      }
+    }
+    subg_attr {
+      key: "workload"
+      value {
+        uint64_value: 0
+      }
+    }
+    subg_attr {
+      key: "workload_on_arch"
+      value {
+        uint64_value: 0
+      }
+    }
+  }
+}
+graph_attr {
+  key: "files_md5sum"
+  value {
+    map_string_2_string_value {
+      value {
+        key: "/workspace/./build/quant_model/CNN_int.xmodel"
+        value: "51a913e34104c68fc21c8d6ffaaa38cb"
+      }
+    }
+  }
+}
+graph_attr {
+  key: "libs_info"
+  value {
+    map_string_2_string_value {
+      value {
+        key: "xcompiler.2.0.0"
+        value: "15a84043bf6155113b5187a72c5ce0db55ad8e60"
+      }
+      value {
+        key: "xcompiler.2.0.0 : target-factory.2.0.0"
+        value: "0228accac8740ee81bd172a487c61a04273f5ab1"
+      }
+      value {
+        key: "xcompiler.2.0.0 : xir.2.0.0"
+        value: "9120e08ab9769fc285c8a2b8c0856232de0627c2"
+      }
+    }
+  }
+}
+graph_attr {
+  key: "return_ops"
+  value {
+    string_vec_value {
+      value: "CNN__CNN_Sequential_network__Flatten_11__508"
+    }
+  }
+}
+op_defs {
+  name: "scale"
+  input_args {
+    name: "input"
+    data_type: 4
+    annotation: "The feature maps, can be x-dimension."
+  }
+  input_args {
+    name: "scale"
+    data_type: 4
+    annotation: "1-dimension, channel-wise."
+  }
+  input_args {
+    name: "bias"
+    occur_type: OPTIONAL
+    data_type: 4
+    annotation: "1-dimension, channel-wise."
+  }
+  attrs {
+    name: "axis"
+    occur_type: OPTIONAL
+    default_value {
+      int32_value: -1
+    }
+    list_length: 1
+    annotation: "`Datatype`: `int`\n\nthe axis of the input to implement scale"
+  }
+  annotation: "This function computes the channel-wise dot product and adds the bias. For example, axis = -1:\n\n    output[b, h, w, c] = input[b, h, w, c] * scale[c] + bias[c]\n"
+}
+op_defs {
+  name: "exp"
+  input_args {
+    name: "input"
+    data_type: 4
+    annotation: "The feature maps, can be x-dimension."
+  }
+  annotation: "This function computes the exponential of the input tensor element-wise.\n\n    f(x) = exp(x)\n"
+}
+op_defs {
+  name: "tile-fix"
+  input_args {
+    name: "input"
+    data_type: 2
+    annotation: "4-dimension, N H W C"
+  }
+  attrs {
+    name: "reverse"
+    default_value {
+      bool_value: false
+    }
+    list_length: 1
+    annotation: "`Datatype`: `bool`\n\nif reverse"
+  }
+  attrs {
+    name: "stride"
+    default_value {
+      int32_value: 0
+    }
+    list_length: 1
+    annotation: "`Datatype`: `int`\n\nstride for feature maps"
+  }
+}
+op_defs {
+  name: "matmul"
+  input_args {
+    name: "input"
+    occur_type: REQUIRED_AND_REPEATED
+    data_type: 4
+    annotation: "The feature maps, can be x-dimension."
+  }
+  input_args {
+    name: "bias"
+    occur_type: OPTIONAL
+    data_type: 4
+    annotation: "1-dimension"
+  }
+  attrs {
+    name: "transpose_a"
+    default_value {
+      bool_value: false
+    }
+    list_length: 1
+    annotation: "`Datatype`: `bool`\n\nIf true, input[0] is transposed before multiplication.\n\ntranspose(input[0]):\n\n    [..., a, b] -> [..., b, a]\n"
+  }
+  attrs {
+    name: "transpose_b"
+    default_value {
+      bool_value: false
+    }
+    list_length: 1
+    annotation: "`Datatype`: `bool`\n\nIf true, input[1] is transposed before multiplication.\n\ntranspose(input[1]):\n\n    [..., b, c] -> [..., c, b]\n"
+  }
+  annotation: "This operator is batched matmul.\n\n    input[0] : [..., a, b]\n    input[1] : [..., b, c]\n    output   : [..., a, c]\n    output[..., a, c] = sum_{i}\n                      input[0][..., a, i] * input[1][..., i, b]\nIn this operator, ... denotes non-matrix dimensions,\nand non-matrix dimensions are broadcasted.\nFor example,  if input[0].shape is `(1, j, m, n)`, and the other is `(k, 1, n, p)`, the out.shape would be `(k, j, m, p)`."
+}
+op_defs {
+  name: "stack"
+  input_args {
+    name: "input"
+    occur_type: REQUIRED_AND_REPEATED
+    data_type: 4
+    annotation: "The feature maps, can be x-dimension."
+  }
+  attrs {
+    name: "axis"
+    default_value {
+      int32_value: 0
+    }
+    list_length: 1
+    annotation: "`Datatype`: `int`\n\nDimension along which to pack. Negative values wrap around, so the valid range is [-(R+1), R+1)"
+  }
+  annotation: "Stacks a list of `rank-R` tensors into one `rank-(R+1)` tensor.\n\nFor example, given a list of length N of tensors of shape `(A, B, C)`;\n\nif axis == 0 then the output tensor will have the shape `(N, A, B, C)`.\n\nif axis == 1 then the output tensor will have the shape `(A, N, B, C)`."
+}
+op_defs {
+  name: "strided_slice"
+  input_args {
+    name: "input"
+    data_type: 4
+    annotation: "The feature maps, can be x-dimension."
+  }
+  attrs {
+    name: "begin"
+    default_value {
+      int32_vec_value {
+      }
+    }
+    annotation: "`Datatype`: `vector<int>`\n\nstart location of slicing"
+  }
+  attrs {
+    name: "end"
+    default_value {
+      int32_vec_value {
+      }
+    }
+    annotation: "`Datatype`: `vector<int>`\n\nend location of slicing"
+  }
+  attrs {
+    name: "strides"
+    default_value {
+      int32_vec_value {
+      }
+    }
+    annotation: "`Datatype`: `vector<int>`\n\nstrides of slicing"
+  }
+  annotation: "This operator is NumPy-style slicing syntax,\n\n    output = input[begin:end:strides]\n"
+}
+op_defs {
+  name: "softmax"
+  input_args {
+    name: "input"
+    data_type: 4
+    annotation: "The feature maps, can be x-dimension."
+  }
+  attrs {
+    name: "axis"
+    default_value {
+      int32_value: 0
+    }
+    list_length: 1
+    annotation: "`Datatype`: `int`\n\nthe dimension softmax would be performed on."
+  }
+  annotation: "Softmax Operator performs softmax along the dimension of axis.\n\n    f(o) = exp(o) / sum_{i}(exp(i))"
+}
+op_defs {
+  name: "batchnorm"
+  input_args {
+    name: "input"
+    data_type: 4
+    annotation: "The feature maps, can be x-dimension."
+  }
+  input_args {
+    name: "gamma"
+    data_type: 4
+    annotation: "`[in.shape[axis]]`"
+  }
+  input_args {
+    name: "beta"
+    data_type: 4
+    annotation: "`[in.shape[axis]]`"
+  }
+  input_args {
+    name: "moving_mean"
+    data_type: 4
+    annotation: "`[in.shape[axis]]`"
+  }
+  input_args {
+    name: "moving_var"
+    data_type: 4
+    annotation: "`[in.shape[axis]]`"
+  }
+  attrs {
+    name: "axis"
+    default_value {
+      int32_value: 0
+    }
+    list_length: 1
+    annotation: "`Datatype`: `int`\n\nthe axis of the input to implement batchnorm"
+  }
+  attrs {
+    name: "epsilon"
+    default_value {
+      float_value: 0
+    }
+    list_length: 1
+    annotation: "`Datatype`: `float`\n\na value added to the denominator for numerical stability"
+  }
+  annotation: "implements batchnorm along the last dimension of input feature maps.\n\n    output = (input - moving_mean) /\n             sqrt(moving_var + epsilon) * gamma + beta"
+}
+op_defs {
+  name: "pixel-shuffle-fix"
+  input_args {
+    name: "input"
+    data_type: 4
+    annotation: "`[batch, in_height, in_width, in_channels]`."
+  }
+  attrs {
+    name: "scale"
+    default_value {
+      int32_value: 0
+    }
+    list_length: 1
+    annotation: "`Datatype`: `int`\n\nscale for reorg"
+  }
+  attrs {
+    name: "reverse"
+    default_value {
+      bool_value: false
+    }
+    list_length: 1
+    annotation: "`Datatype`: `bool`\n\nreorg or reversed reorg"
+  }
+}
+op_defs {
+  name: "reorg-fix"
+  input_args {
+    name: "input"
+    data_type: 4
+    annotation: "`[batch, in_height, in_width, in_channels]`."
+  }
+  attrs {
+    name: "scale"
+    default_value {
+      int32_value: 0
+    }
+    list_length: 1
+    annotation: "`Datatype`: `int`\n\nscale for reorg"
+  }
+  attrs {
+    name: "reverse"
+    default_value {
+      bool_value: false
+    }
+    list_length: 1
+    annotation: "`Datatype`: `bool`\n\nreorg or reversed reorg"
+  }
+}
+op_defs {
+  name: "reorg"
+  input_args {
+    name: "input"
+    data_type: 4
+    annotation: "`[batch, in_height, in_width, in_channels]`."
+  }
+  attrs {
+    name: "scale"
+    default_value {
+      int32_value: 0
+    }
+    list_length: 1
+    annotation: "`Datatype`: `int`\n\nscale for reorg"
+  }
+  attrs {
+    name: "reverse"
+    default_value {
+      bool_value: false
+    }
+    list_length: 1
+    annotation: "`Datatype`: `bool`\n\nreorg or reversed reorg"
+  }
+  annotation: "Reorg Operator in YOLO.The implementations can be seen in https://github.com/intel/caffe/blob/master/include/caffe/layers/reorg_layer.hpp."
+}
+op_defs {
+  name: "concat-fix"
+  input_args {
+    name: "input"
+    occur_type: REQUIRED_AND_REPEATED
+    data_type: 2
+    annotation: "The feature maps, can be x-dimension."
+  }
+  attrs {
+    name: "axis"
+    default_value {
+      int32_value: 0
+    }
+    list_length: 1
+    annotation: "`Datatype`: `int`\n\nDimension along which to concatenate."
+  }
+}
+op_defs {
+  name: "concat"
+  input_args {
+    name: "input"
+    occur_type: REQUIRED_AND_REPEATED
+    data_type: 4
+    annotation: "The feature maps, can be x-dimension."
+  }
+  attrs {
+    name: "axis"
+    default_value {
+      int32_value: 0
+    }
+    list_length: 1
+    annotation: "`Datatype`: `int`\n\nDimension along which to concatenate."
+  }
+  annotation: "Concatenates different feature maps along the dimension `axis`.\nAll dimensions except axis must be equal."
+}
+op_defs {
+  name: "downsample-fix"
+  input_args {
+    name: "input"
+    data_type: 2
+    annotation: "The feature maps, can be x-dimension."
+  }
+  input_args {
+    name: "size"
+    occur_type: OPTIONAL
+    annotation: "Constant values denotes the shape of the output feature maps."
+  }
+  attrs {
+    name: "mode"
+    default_value {
+      string_value: ""
+    }
+    list_length: 1
+    annotation: "`Datatype`: `string`\n\nNEAREST, BILINEAR or TRILINEAR"
+  }
+  attrs {
+    name: "align_corners"
+    occur_type: OPTIONAL
+    default_value {
+      bool_value: false
+    }
+    list_length: 1
+    annotation: "`Datatype`: `bool`\n\nIf true, preserving the values at the corner pixels. Defaults to false."
+  }
+  attrs {
+    name: "half_pixel_centers"
+    occur_type: OPTIONAL
+    default_value {
+      bool_value: false
+    }
+    list_length: 1
+    annotation: "`Datatype`: `bool`\n\nIf true, use half-pixel as centers."
+  }
+  attrs {
+    name: "scale"
+    default_value {
+      float_vec_value {
+      }
+    }
+    list_length: 2
+    annotation: "`DataType` : `std::vector<float>` {scale_w, scale_h}"
+  }
+}
+op_defs {
+  name: "resize"
+  input_args {
+    name: "input"
+    data_type: 4
+    annotation: "The feature maps, can be x-dimension."
+  }
+  input_args {
+    name: "size"
+    occur_type: OPTIONAL
+    annotation: "Constant values denotes the shape of the output feature maps."
+  }
+  attrs {
+    name: "mode"
+    default_value {
+      string_value: ""
+    }
+    list_length: 1
+    annotation: "`Datatype`: `string`\n\nNEAREST, BILINEAR or TRILINEAR"
+  }
+  attrs {
+    name: "align_corners"
+    occur_type: OPTIONAL
+    default_value {
+      bool_value: false
+    }
+    list_length: 1
+    annotation: "`Datatype`: `bool`\n\nIf true, preserving the values at the corner pixels. Defaults to false."
+  }
+  attrs {
+    name: "half_pixel_centers"
+    occur_type: OPTIONAL
+    default_value {
+      bool_value: false
+    }
+    list_length: 1
+    annotation: "`Datatype`: `bool`\n\nIf true, use half-pixel as centers."
+  }
+  attrs {
+    name: "scale"
+    occur_type: OPTIONAL
+    default_value {
+      float_vec_value {
+      }
+    }
+    annotation: "`Datatype`: `vector<float>`\n\nConstant values denotes the scale to resize the input. scale = out / in"
+  }
+  annotation: "Operator resize the feature maps. For example, if the input is an image, and the shape of this image is [h, w, c], after 2d resize, the shape of the output image is [oh, ow, c].\n\n    scale = (align_corners && out > 1)\n            ? (in - 1) / (out - 1)\n            : in / out\nWhen given the index of output, how to find the corresponding input pixels:\n\n    scaler = half_pixel_centers\n             ? (out + 0.5) * scale - 0.5\n             : out * scale\n(1). for NEAREST resize:\n\n    w_idx[ow] = min((w - 1),\n                    align_corners ? round(scaler(ow))\n                                  : floor(scaler(ow)))\n    h_idx[oh] = min((h - 1),\n                    align_corners ? round(scaler(oh))\n                                  : floor(scaler(oh)))\n    resize[oh, ow, c] = image[h_idx[oh], w_idx[ow], c]\n(2). for BILINEAR resize:\n\n    top = floor(scaler(oh))\n    bottom = min(h - 1, top + 1)\n    left = floor(scaler(ow))\n    right = min(w - 1, left + 1)\n    x_lerp = scaler(ow) - left\n    y_lerp = scaler(oh) - top\n    reisze[oh, ow, c] = (image[top, left, c] * (1 - x_lerp) +\n                         image[top, right, c] * x_lerp) * (1 - y_lerp)\n                        (image[bottom, left, c] * (1 - x_lerp) +\n                         image[bottom, right, c] * x_lerp) * y_lerp\n"
+}
+op_defs {
+  name: "pad-fix"
+  input_args {
+    name: "input"
+    data_type: 2
+    annotation: "The feature maps, can be x-dimension."
+  }
+  attrs {
+    name: "paddings"
+    default_value {
+      int32_vec_value {
+      }
+    }
+    annotation: "`Datatype`: `vector<int>`\n\npad along different dimensions, the number of value in paddings should be 2 times the number of dimensions of input feature maps.The n-th dimension of the output feature maps equals to:\n\n    (n-th dim) out =\n        paddings[2n] + (n-th dim) in + paddings[2n + 1]"
+  }
+  attrs {
+    name: "mode"
+    default_value {
+      string_value: ""
+    }
+    list_length: 1
+    annotation: "`Datatype`: `string`\n\n`CONSTANT`,`REFLECT` or `SYMMETRIC`"
+  }
+  attrs {
+    name: "constant_values"
+    occur_type: OPTIONAL
+    default_value {
+      bytes_value {
+      }
+    }
+    annotation: "`Datatype`: `vector<char>`\n\nthe value set into the padded locations, 2 * len(paddings)"
+  }
+  annotation: "For example,\n\nif the mode = \"CONSTANT\"\n\n    input = [[1, 2],\n             [3, 4]]\n    paddings = [0, 1, 1, 0]\n    output = [[0, 1, 2],\n              [0, 3, 4],\n              [0, 0, 0]]\nif the mode = \"REFLECT\"\n\n    input = [[1, 2],\n             [3, 4]]\n    paddings = [0, 1, 1, 0]\n    output = [[2, 1, 2],\n              [4, 3, 4],\n              [2, 1, 2]]\nif the mode = \"SYMMETRIC\"\n\n    input = [[1, 2],\n             [3, 4]]\n    paddings = [0, 1, 1, 0]\n    output = [[1, 1, 2],\n              [3, 3, 4],\n              [3, 3, 4]]\n"
+}
+op_defs {
+  name: "flatten"
+  input_args {
+    name: "input"
+    data_type: 4
+    annotation: "The feature maps, can be x-dimension."
+  }
+  attrs {
+    name: "start_axis"
+    default_value {
+      int32_value: 0
+    }
+    list_length: 1
+    annotation: "`Datatype`: `int`\n\nstart axis to be flattened"
+  }
+  attrs {
+    name: "end_axis"
+    default_value {
+      int32_value: 0
+    }
+    list_length: 1
+    annotation: "`Datatype`: `int`\n\nend axis to be flattened"
+  }
+  annotation: "For example:\n\n    input.shape  = [32, 5, 5, 2, 4]\n    start_axis = 1\n    end_axis = -1\n    output.shape = [32, 200]"
+}
+op_defs {
+  name: "eltwise-fix"
+  input_args {
+    name: "input"
+    occur_type: REQUIRED_AND_REPEATED
+    data_type: 2
+    annotation: "The feature maps, can be x-dimension. eltwise-fix operator implements element-wise operations."
+  }
+  attrs {
+    name: "nonlinear"
+    occur_type: OPTIONAL
+    default_value {
+      string_value: "NONE"
+    }
+    list_length: 1
+    annotation: "`Datatype`: `string`\n\nnonlinear type, \"NONE\", \"RELU\", \"PRELU\", \"LEAKYRELU\",\"RELU6\". Default is \"NONE\""
+  }
+  attrs {
+    name: "type"
+    occur_type: OPTIONAL
+    default_value {
+      string_value: "ADD"
+    }
+    list_length: 1
+    annotation: "`Datatype`: `string`\n\neltwise type, \"ADD\", \"MUL\". Default is \"ADD\""
+  }
+}
+op_defs {
+  name: "transpose"
+  input_args {
+    name: "input"
+    data_type: 4
+    annotation: "The feature maps, can be x-dimension."
+  }
+  attrs {
+    name: "order"
+    default_value {
+      int32_vec_value {
+      }
+    }
+    annotation: "`Datatype`: `vector<int>`\n\nThe order to be transposed."
+  }
+  annotation: "For example:\n\n    input.shape  = [32, 2, 64, 4]\n    order = {0, 3, 2, 1}\n    output = input.transpose([0, 3, 2, 1]\n    output.shape = [32, 4, 64, 2]"
+}
+op_defs {
+  name: "squeeze"
+  input_args {
+    name: "input"
+    data_type: 4
+    annotation: "The feature maps, can be x-dimension."
+  }
+  attrs {
+    name: "axis"
+    occur_type: OPTIONAL
+    default_value {
+      int32_vec_value {
+      }
+    }
+    annotation: "`Datatype`: `vector<int>`\n\nThe dimensions to be squeezed.\nIf axis is not specified, all dimensions equal to 1 would be squeezed."
+  }
+  annotation: "For example:\n\n    input.shape  = [32, 2, 1, 1]\n    axis = {2, 3}\n    output.shape = [32, 2]"
+}
+op_defs {
+  name: "reshape-fix"
+  input_args {
+    name: "input"
+    data_type: 2
+    annotation: "x-dimension"
+  }
+  attrs {
+    name: "shape"
+    default_value {
+      int32_vec_value {
+      }
+    }
+    annotation: "`Datatype`: `vector<int>`\n\nshape"
+  }
+}
+op_defs {
+  name: "transposed-depthwise-conv3d"
+  input_args {
+    name: "input"
+    data_type: 4
+    annotation: "An input tensor with shape `[batch, in_height, in_width, depth, in_channels]`."
+  }
+  input_args {
+    name: "weights"
+    data_type: 4
+    annotation: "A filter tensor with shape `[output_channels, kernel_height, kernel_width, kernel_depth, in_channels]`."
+  }
+  input_args {
+    name: "bias"
+    occur_type: OPTIONAL
+    data_type: 4
+    annotation: "A bias tensor with shape `[output_channels]`."
+  }
+  attrs {
+    name: "kernel"
+    default_value {
+      int32_vec_value {
+      }
+    }
+    list_length: 3
+    annotation: "`Datatype`: `vector<int>`\n\nThe kernel sizes of the filter. The value must be: `{kernel_width, kernel_height, kernel_depth}`."
+  }
+  attrs {
+    name: "stride"
+    default_value {
+      int32_vec_value {
+      }
+    }
+    list_length: 3
+    annotation: "`Datatype`: `vector<int>`\n\nThe strides of the filter. The value must be: `{stride_width, stride_height, stride_depth}`."
+  }
+  attrs {
+    name: "dilation"
+    occur_type: OPTIONAL
+    default_value {
+      int32_vec_value {
+        value: 1
+        value: 1
+        value: 1
+      }
+    }
+    list_length: 3
+    annotation: "`Datatype`: `vector<int>`\n\nThe dilation of the filter. The value must be: `{dilation_width, dilation_height, dilation_depth}`, The dilation in the batch or depth are 1 in default."
+  }
+  attrs {
+    name: "pad_mode"
+    default_value {
+      string_value: ""
+    }
+    list_length: 1
+    annotation: "`Datatype`: `string`\n\nWe support 4 padding mode: `FLOOR, CEIL, SAME, VALID`. For example, when you parsing models from other frameworks, `caffe, pytorch->\"FLOOR\", tensorflow->\"SAME\" or \"VALID\"`."
+  }
+  attrs {
+    name: "pad"
+    occur_type: OPTIONAL
+    default_value {
+      int32_vec_value {
+        value: 0
+        value: 0
+        value: 0
+        value: 0
+        value: 0
+        value: 0
+      }
+    }
+    list_length: 6
+    annotation: "`Datatype`: `vector<int>`\n\nThe padding sizes of input feature maps. The value must be `{left, right, top, bottom, near, far}`.\n\nFor transposed convolutions, the padding here denotes the `{kernel_size - 1 - actual_padding}`.This is an optional attribute, when the pad_mode is SAME or VALID, you don\'t need to specify this attribute."
+  }
+  annotation: "Transposed depth-wise 3D convolution.\n\n"
+}
+op_defs {
+  name: "conv2d-fix"
+  input_args {
+    name: "input"
+    data_type: 2
+    annotation: "An input tensor with shape `[batch, in_height, in_width, in_channels]`."
+  }
+  input_args {
+    name: "weights"
+    data_type: 2
+    annotation: "A filter tensor with shape `[output_channels, kernel_height, kernel_width, in_channels]`."
+  }
+  input_args {
+    name: "bias"
+    occur_type: OPTIONAL
+    data_type: 2
+    annotation: "A bias tensor with shape `[output_channels]`."
+  }
+  attrs {
+    name: "kernel"
+    default_value {
+      int32_vec_value {
+      }
+    }
+    list_length: 2
+    annotation: "`Datatype`: `vector<int>`\n\nThe kernel sizes of the filter. The value must be: `{kernel_width, kernel_height}`."
+  }
+  attrs {
+    name: "stride"
+    default_value {
+      int32_vec_value {
+      }
+    }
+    list_length: 2
+    annotation: "`Datatype`: `vector<int>`\n\nThe strides of the filter. The value must be: `{stride_width, stride_height}`."
+  }
+  attrs {
+    name: "dilation"
+    occur_type: OPTIONAL
+    default_value {
+      int32_vec_value {
+        value: 1
+        value: 1
+      }
+    }
+    list_length: 2
+    annotation: "`Datatype`: `vector<int>`\n\nThe dilation of the filter. The value must be: `{dilation_width, dilation_height}`, The dilation in the batch or depth are 1 in default."
+  }
+  attrs {
+    name: "pad"
+    occur_type: OPTIONAL
+    default_value {
+      int32_vec_value {
+        value: 0
+        value: 0
+        value: 0
+        value: 0
+      }
+    }
+    list_length: 4
+    annotation: "`Datatype`: `vector<int>`\n\nThe padding sizes of input feature maps. The value must be `{left, right, top, bottom}`.\n\nFor transposed convolutions, the padding here denotes the `{kernel_size - 1 - actual_padding}`."
+  }
+  attrs {
+    name: "nonlinear"
+    occur_type: OPTIONAL
+    default_value {
+      string_value: ""
+    }
+    list_length: 1
+    annotation: "`Datatype`: `string`\n\nnonlinear type, \"NONE\", \"RELU\", \"PRELU\", \"LEAKYRELU\",\"RELU6\",\"HSIGMOID\",\"HSWISH\"."
+  }
+  attrs {
+    name: "hsigmoid_in"
+    occur_type: OPTIONAL
+    default_value {
+      int32_value: -128
+    }
+    list_length: 1
+    annotation: "`Datatype`: `int`\n\nfix_point of hsigmoid"
+  }
+  attrs {
+    name: "shift_hsigmoid"
+    occur_type: OPTIONAL
+    default_value {
+      int32_value: -128
+    }
+    list_length: 1
+    annotation: "`Datatype`: `int`\n\nshift value after hsigmoid"
+  }
+  attrs {
+    name: "shift_hswish"
+    occur_type: OPTIONAL
+    default_value {
+      int32_value: -128
+    }
+    list_length: 1
+    annotation: "`Datatype`: `int`\n\nshift value after hswish"
+  }
+}
+op_defs {
+  name: "depthwise-conv3d-fix"
+  input_args {
+    name: "input"
+    data_type: 2
+    annotation: "An input tensor with shape `[batch, in_height, in_width, in_depth, in_channels]`."
+  }
+  input_args {
+    name: "weights"
+    data_type: 2
+    annotation: "A filter tensor with shape `[output_channels, kernel_height, kernel_width, kernel_depth, in_channels]`."
+  }
+  input_args {
+    name: "bias"
+    occur_type: OPTIONAL
+    data_type: 2
+    annotation: "A bias tensor with shape `[output_channels]`."
+  }
+  attrs {
+    name: "kernel"
+    default_value {
+      int32_vec_value {
+      }
+    }
+    list_length: 3
+    annotation: "`Datatype`: `vector<int>`\n\nThe kernel sizes of the filter. The value must be: `{kernel_width, kernel_height}`."
+  }
+  attrs {
+    name: "stride"
+    default_value {
+      int32_vec_value {
+      }
+    }
+    list_length: 3
+    annotation: "`Datatype`: `vector<int>`\n\nThe strides of the filter. The value must be: `{stride_width, stride_height}`."
+  }
+  attrs {
+    name: "dilation"
+    occur_type: OPTIONAL
+    default_value {
+      int32_vec_value {
+        value: 1
+        value: 1
+        value: 1
+      }
+    }
+    list_length: 3
+    annotation: "`Datatype`: `vector<int>`\n\nThe dilation of the filter. The value must be: `{dilation_width, dilation_height}`, The dilation in the batch or depth are 1 in default."
+  }
+  attrs {
+    name: "pad"
+    occur_type: OPTIONAL
+    default_value {
+      int32_vec_value {
+        value: 0
+        value: 0
+        value: 0
+        value: 0
+        value: 0
+        value: 0
+      }
+    }
+    list_length: 6
+    annotation: "`Datatype`: `vector<int>`\n\nThe padding sizes of input feature maps. The value must be `{left, right, top, bottom}`.\n\nFor transposed convolutions, the padding here denotes the `{kernel_size - 1 - actual_padding}`.This is an optional attribute, when the pad_mode is SAME or VALID, you don\'t need to specify this attribute."
+  }
+  attrs {
+    name: "nonlinear"
+    occur_type: OPTIONAL
+    default_value {
+      string_value: ""
+    }
+    list_length: 1
+    annotation: "`Datatype`: `string`\n\nnonlinear type, \"NONE\", \"RELU\", \"PRELU\", \"LEAKYRELU\",\"RELU6\",\"HSIGMOID\",\"HSWISH\"."
+  }
+}
+op_defs {
+  name: "transposed-depthwise-conv2d-fix"
+  input_args {
+    name: "input"
+    data_type: 2
+    annotation: "An input tensor with shape `[batch, in_height, in_width, in_channels]`."
+  }
+  input_args {
+    name: "weights"
+    data_type: 2
+    annotation: "A filter tensor with shape `[output_channels, kernel_height, kernel_width, in_channels]`."
+  }
+  input_args {
+    name: "bias"
+    occur_type: OPTIONAL
+    data_type: 2
+    annotation: "A bias tensor with shape `[output_channels]`."
+  }
+  attrs {
+    name: "kernel"
+    default_value {
+      int32_vec_value {
+      }
+    }
+    list_length: 2
+    annotation: "`Datatype`: `vector<int>`\n\nThe kernel sizes of the filter. The value must be: `{kernel_width, kernel_height}`."
+  }
+  attrs {
+    name: "stride"
+    default_value {
+      int32_vec_value {
+      }
+    }
+    list_length: 2
+    annotation: "`Datatype`: `vector<int>`\n\nThe strides of the filter. The value must be: `{stride_width, stride_height}`."
+  }
+  attrs {
+    name: "dilation"
+    occur_type: OPTIONAL
+    default_value {
+      int32_vec_value {
+        value: 1
+        value: 1
+      }
+    }
+    list_length: 2
+    annotation: "`Datatype`: `vector<int>`\n\nThe dilation of the filter. The value must be: `{dilation_width, dilation_height}`, The dilation in the batch or depth are 1 in default."
+  }
+  attrs {
+    name: "pad"
+    occur_type: OPTIONAL
+    default_value {
+      int32_vec_value {
+        value: 0
+        value: 0
+        value: 0
+        value: 0
+      }
+    }
+    list_length: 4
+    annotation: "`Datatype`: `vector<int>`\n\nThe padding sizes of input feature maps. The value must be `{left, right, top, bottom}`.\n\nFor transposed convolutions, the padding here denotes the `{kernel_size - 1 - actual_padding}`."
+  }
+  attrs {
+    name: "nonlinear"
+    occur_type: OPTIONAL
+    default_value {
+      string_value: ""
+    }
+    list_length: 1
+    annotation: "`Datatype`: `string`\n\nnonlinear type, \"NONE\", \"RELU\", \"PRELU\", \"LEAKYRELU\",\"RELU6\",\"HSIGMOID\",\"HSWISH\"."
+  }
+}
+op_defs {
+  name: "transposed-conv2d-fix"
+  input_args {
+    name: "input"
+    data_type: 2
+    annotation: "An input tensor with shape `[batch, in_height, in_width, in_channels]`."
+  }
+  input_args {
+    name: "weights"
+    data_type: 2
+    annotation: "A filter tensor with shape `[output_channels, kernel_height, kernel_width, in_channels]`."
+  }
+  input_args {
+    name: "bias"
+    occur_type: OPTIONAL
+    data_type: 2
+    annotation: "A bias tensor with shape `[output_channels]`."
+  }
+  attrs {
+    name: "kernel"
+    default_value {
+      int32_vec_value {
+      }
+    }
+    list_length: 2
+    annotation: "`Datatype`: `vector<int>`\n\nThe kernel sizes of the filter. The value must be: `{kernel_width, kernel_height}`."
+  }
+  attrs {
+    name: "stride"
+    default_value {
+      int32_vec_value {
+      }
+    }
+    list_length: 2
+    annotation: "`Datatype`: `vector<int>`\n\nThe strides of the filter. The value must be: `{stride_width, stride_height}`."
+  }
+  attrs {
+    name: "dilation"
+    occur_type: OPTIONAL
+    default_value {
+      int32_vec_value {
+        value: 1
+        value: 1
+      }
+    }
+    list_length: 2
+    annotation: "`Datatype`: `vector<int>`\n\nThe dilation of the filter. The value must be: `{dilation_width, dilation_height}`, The dilation in the batch or depth are 1 in default."
+  }
+  attrs {
+    name: "pad"
+    occur_type: OPTIONAL
+    default_value {
+      int32_vec_value {
+        value: 0
+        value: 0
+        value: 0
+        value: 0
+      }
+    }
+    list_length: 4
+    annotation: "`Datatype`: `vector<int>`\n\nThe padding sizes of input feature maps. The value must be `{left, right, top, bottom}`.\n\nFor transposed convolutions, the padding here denotes the `{kernel_size - 1 - actual_padding}`."
+  }
+  attrs {
+    name: "nonlinear"
+    occur_type: OPTIONAL
+    default_value {
+      string_value: ""
+    }
+    list_length: 1
+    annotation: "`Datatype`: `string`\n\nnonlinear type, \"NONE\", \"RELU\", \"PRELU\", \"LEAKYRELU\",\"RELU6\",\"HSIGMOID\",\"HSWISH\"."
+  }
+}
+op_defs {
+  name: "relu"
+  input_args {
+    name: "input"
+    data_type: 4
+    annotation: "The feature maps, can be x-dimension."
+  }
+  annotation: "Computes the rectified linear element-wise:\n\n    f(x) = max(0, x).\n"
+}
+op_defs {
+  name: "reduction_product"
+  input_args {
+    name: "input"
+    data_type: 4
+    annotation: "The feature maps, can be x-dimension."
+  }
+  attrs {
+    name: "axis"
+    default_value {
+      int32_vec_value {
+      }
+    }
+    annotation: "`Datatype`: `vector<int>`\n\nThe dimensions to reduce."
+  }
+  attrs {
+    name: "keep_dims"
+    default_value {
+      bool_value: false
+    }
+    list_length: 1
+    annotation: "`Datatype`: `bool`\n\nspecify whether the reduced dimension is kept or not."
+  }
+  annotation: "Implement the product along each of the axis dimensions."
+}
+op_defs {
+  name: "conv3d-fix"
+  input_args {
+    name: "input"
+    data_type: 2
+    annotation: "An input tensor with shape `[batch, in_height, in_width, in_depth, in_channels]`."
+  }
+  input_args {
+    name: "weights"
+    data_type: 2
+    annotation: "A filter tensor with shape `[output_channels, kernel_height, kernel_width, kernel_depth, in_channels]`."
+  }
+  input_args {
+    name: "bias"
+    occur_type: OPTIONAL
+    data_type: 2
+    annotation: "A bias tensor with shape `[output_channels]`."
+  }
+  attrs {
+    name: "kernel"
+    default_value {
+      int32_vec_value {
+      }
+    }
+    list_length: 3
+    annotation: "`Datatype`: `vector<int>`\n\nThe kernel sizes of the filter. The value must be: `{kernel_width, kernel_height}`."
+  }
+  attrs {
+    name: "stride"
+    default_value {
+      int32_vec_value {
+      }
+    }
+    list_length: 3
+    annotation: "`Datatype`: `vector<int>`\n\nThe strides of the filter. The value must be: `{stride_width, stride_height}`."
+  }
+  attrs {
+    name: "dilation"
+    occur_type: OPTIONAL
+    default_value {
+      int32_vec_value {
+        value: 1
+        value: 1
+        value: 1
+      }
+    }
+    list_length: 3
+    annotation: "`Datatype`: `vector<int>`\n\nThe dilation of the filter. The value must be: `{dilation_width, dilation_height}`, The dilation in the batch or depth are 1 in default."
+  }
+  attrs {
+    name: "pad"
+    occur_type: OPTIONAL
+    default_value {
+      int32_vec_value {
+        value: 0
+        value: 0
+        value: 0
+        value: 0
+        value: 0
+        value: 0
+      }
+    }
+    list_length: 6
+    annotation: "`Datatype`: `vector<int>`\n\nThe padding sizes of input feature maps. The value must be `{left, right, top, bottom}`.\n\nFor transposed convolutions, the padding here denotes the `{kernel_size - 1 - actual_padding}`.This is an optional attribute, when the pad_mode is SAME or VALID, you don\'t need to specify this attribute."
+  }
+  attrs {
+    name: "nonlinear"
+    occur_type: OPTIONAL
+    default_value {
+      string_value: ""
+    }
+    list_length: 1
+    annotation: "`Datatype`: `string`\n\nnonlinear type, \"NONE\", \"RELU\", \"PRELU\", \"LEAKYRELU\",\"RELU6\",\"HSIGMOID\",\"HSWISH\"."
+  }
+  attrs {
+    name: "hsigmoid_in"
+    occur_type: OPTIONAL
+    default_value {
+      int32_value: -128
+    }
+    list_length: 1
+    annotation: "`Datatype`: `int`\n\nfix_point of hsigmoid"
+  }
+  attrs {
+    name: "shift_hsigmoid"
+    occur_type: OPTIONAL
+    default_value {
+      int32_value: -128
+    }
+    list_length: 1
+    annotation: "`Datatype`: `int`\n\nshift value after hsigmoid"
+  }
+  attrs {
+    name: "shift_hswish"
+    occur_type: OPTIONAL
+    default_value {
+      int32_value: -128
+    }
+    list_length: 1
+    annotation: "`Datatype`: `int`\n\nshift value after hswish"
+  }
+}
+op_defs {
+  name: "const"
+  attrs {
+    name: "shape"
+    default_value {
+      int32_vec_value {
+      }
+    }
+    annotation: "`Datatype`: `vector<int>`\n\nThe shape of the output tensor"
+  }
+  attrs {
+    name: "data_type"
+    default_value {
+      string_value: ""
+    }
+    list_length: 1
+    annotation: "`Datatype`: `string`\n\nThe data type of the data of output feature maps, we use FLOAT32 as the default."
+  }
+  attrs {
+    name: "data"
+    default_value {
+      bytes_value {
+      }
+    }
+    annotation: "Constant values stored in this operator, \nfloat-point data in vector<char>.\n"
+  }
+  annotation: "A placeholder which stores the parameters, \nsuch as weights, bias, etc.\n\nHow to transform float-point values into vector<char>: \n\n    const std::vector<float> float_data = {...};\n    std::vector<char> data;\n    for (uint outer = 0; outer < float_data.size(); outer++)\n      for (auto inner = 0; inner < sizeof(float) / sizeof(char); inner++)\n        data.push_back(*(reinterpret_cast<char*>(&float_data) + inner));\n"
+}
+op_defs {
+  name: "avgpool2d"
+  input_args {
+    name: "input"
+    data_type: 4
+    annotation: "An input tensor with shape `[batch, in_height, in_width, in_channels]`."
+  }
+  attrs {
+    name: "kernel"
+    default_value {
+      int32_vec_value {
+      }
+    }
+    list_length: 2
+    annotation: "`Datatype`: `vector<int>`\n\nThe kernel sizes of the filter. The value must be: `{kernel_width, kernel_height}`."
+  }
+  attrs {
+    name: "stride"
+    default_value {
+      int32_vec_value {
+      }
+    }
+    list_length: 2
+    annotation: "`Datatype`: `vector<int>`\n\nThe strides of the filter. The value must be: `{stride_width, stride_height}`."
+  }
+  attrs {
+    name: "pad_mode"
+    default_value {
+      string_value: ""
+    }
+    list_length: 1
+    annotation: "`Datatype`: `string`\n\nWe support 4 padding mode: FLOOR, CEIL, SAME, VALID. For example, when you parsing models from other frameworks, `caffe->\"CEIL\",  tensorflow->\"SAME\" or \"VALID\", pytorch->\"FLOOR\"(default) or \"CEIL\".`"
+  }
+  attrs {
+    name: "pad"
+    occur_type: OPTIONAL
+    default_value {
+      int32_vec_value {
+        value: 0
+        value: 0
+        value: 0
+        value: 0
+      }
+    }
+    list_length: 4
+    annotation: "`Datatype`: `vector<int>`\n\nThe padding sizes of input feature maps. The value must be `{left, right, top, bottom}`."
+  }
+  attrs {
+    name: "global"
+    occur_type: OPTIONAL
+    default_value {
+      bool_value: false
+    }
+    list_length: 1
+    annotation: "`Datatype`: `bool`\n\nGlobal pooling, if global is set to be true, the width and height of output feature maps would be {1, 1}."
+  }
+  attrs {
+    name: "count_include_pad"
+    occur_type: OPTIONAL
+    default_value {
+      bool_value: true
+    }
+    list_length: 1
+    annotation: "`Datatype`: `bool`\n\nif count data in the pad position for avg_pool?For example, caffe is `true`, tensorflow is `false`,pytorch uses `true` as default."
+  }
+  attrs {
+    name: "count_include_invalid"
+    occur_type: OPTIONAL
+    default_value {
+      bool_value: true
+    }
+    list_length: 1
+    annotation: "`Datatype`: `bool`\n\nif count data outside the padded input feature maps?For example, caffe is `false`, tf is `true`,pytorch is `true`."
+  }
+  annotation: "2D average-pooling.\n\n    output[batch, oh, ow, c] =\n        avg_{kw, kh} input[batch, strides[1] * oh + kh,\n           strides[0] * ow + kw, c] *\n(1). if pad_mode == \"`FLOOR`\":\n\n    output_shape = floor((input_shape + pad - kernel) / stride) + 1\n(2). if pad_mode == \"`CEIL`\":\n\n    output_shape = ceil((input_shape + pad - kernel) / stride) + 1\n(3). if pad_mode == \"`SAME`\":\n\n    output_shape = ceil((input_shape + pad) / stride)\n(4). if pad_mode == \"`VALID`\":\n\n    output_shape = ceil((input_shape + pad - kernel) / stride)\n"
+}
+op_defs {
+  name: "transposed-depthwise-conv3d-fix"
+  input_args {
+    name: "input"
+    data_type: 2
+    annotation: "An input tensor with shape `[batch, in_height, in_width, in_depth, in_channels]`."
+  }
+  input_args {
+    name: "weights"
+    data_type: 2
+    annotation: "A filter tensor with shape `[output_channels, kernel_height, kernel_width, kernel_depth, in_channels]`."
+  }
+  input_args {
+    name: "bias"
+    occur_type: OPTIONAL
+    data_type: 2
+    annotation: "A bias tensor with shape `[output_channels]`."
+  }
+  attrs {
+    name: "kernel"
+    default_value {
+      int32_vec_value {
+      }
+    }
+    list_length: 3
+    annotation: "`Datatype`: `vector<int>`\n\nThe kernel sizes of the filter. The value must be: `{kernel_width, kernel_height}`."
+  }
+  attrs {
+    name: "stride"
+    default_value {
+      int32_vec_value {
+      }
+    }
+    list_length: 3
+    annotation: "`Datatype`: `vector<int>`\n\nThe strides of the filter. The value must be: `{stride_width, stride_height}`."
+  }
+  attrs {
+    name: "dilation"
+    occur_type: OPTIONAL
+    default_value {
+      int32_vec_value {
+        value: 1
+        value: 1
+        value: 1
+      }
+    }
+    list_length: 3
+    annotation: "`Datatype`: `vector<int>`\n\nThe dilation of the filter. The value must be: `{dilation_width, dilation_height}`, The dilation in the batch or depth are 1 in default."
+  }
+  attrs {
+    name: "pad"
+    occur_type: OPTIONAL
+    default_value {
+      int32_vec_value {
+        value: 0
+        value: 0
+        value: 0
+        value: 0
+        value: 0
+        value: 0
+      }
+    }
+    list_length: 6
+    annotation: "`Datatype`: `vector<int>`\n\nThe padding sizes of input feature maps. The value must be `{left, right, top, bottom}`.\n\nFor transposed convolutions, the padding here denotes the `{kernel_size - 1 - actual_padding}`.This is an optional attribute, when the pad_mode is SAME or VALID, you don\'t need to specify this attribute."
+  }
+  attrs {
+    name: "nonlinear"
+    occur_type: OPTIONAL
+    default_value {
+      string_value: ""
+    }
+    list_length: 1
+    annotation: "`Datatype`: `string`\n\nnonlinear type, \"NONE\", \"RELU\", \"PRELU\", \"LEAKYRELU\",\"RELU6\",\"HSIGMOID\",\"HSWISH\"."
+  }
+}
+op_defs {
+  name: "hard-sigmoid"
+  input_args {
+    name: "input"
+    data_type: 4
+    annotation: "The feature maps, can be x-dimension."
+  }
+  annotation: "Computes the hard sigmoid function element-wise:\n\n    f(x) = relu6(x + 3) / 6.\n"
+}
+op_defs {
+  name: "download"
+  input_args {
+    name: "input"
+    data_type: 2
+    annotation: "The feature maps, can be x-dimension."
+  }
+  annotation: "An interface operator that holds the data achieved by a DPU-runner, and would be sent to a CPU-runner later."
+}
+op_defs {
+  name: "transposed-depthwise-conv2d"
+  input_args {
+    name: "input"
+    data_type: 4
+    annotation: "An input tensor with shape `[batch, in_height, in_width, in_channels]`."
+  }
+  input_args {
+    name: "weights"
+    data_type: 4
+    annotation: "A filter tensor with shape `[output_channels, kernel_height, kernel_width, in_channels]`."
+  }
+  input_args {
+    name: "bias"
+    occur_type: OPTIONAL
+    data_type: 4
+    annotation: "A bias tensor with shape `[output_channels]`."
+  }
+  attrs {
+    name: "kernel"
+    default_value {
+      int32_vec_value {
+      }
+    }
+    list_length: 2
+    annotation: "`Datatype`: `vector<int>`\n\nThe kernel sizes of the filter. The value must be: `{kernel_width, kernel_height}`."
+  }
+  attrs {
+    name: "stride"
+    default_value {
+      int32_vec_value {
+      }
+    }
+    list_length: 2
+    annotation: "`Datatype`: `vector<int>`\n\nThe strides of the filter. The value must be: `{stride_width, stride_height}`."
+  }
+  attrs {
+    name: "dilation"
+    occur_type: OPTIONAL
+    default_value {
+      int32_vec_value {
+        value: 1
+        value: 1
+      }
+    }
+    list_length: 2
+    annotation: "`Datatype`: `vector<int>`\n\nThe dilation of the filter. The value must be: `{dilation_width, dilation_height}`, The dilation in the batch or depth are 1 in default."
+  }
+  attrs {
+    name: "pad_mode"
+    default_value {
+      string_value: ""
+    }
+    list_length: 1
+    annotation: "`Datatype`: `string`\n\nWe support 4 padding mode: `FLOOR, CEIL, SAME, VALID`. For example, when you parsing models from other frameworks, `caffe, pytorch->\"FLOOR\", tensorflow->\"SAME\" or \"VALID\"`."
+  }
+  attrs {
+    name: "pad"
+    occur_type: OPTIONAL
+    default_value {
+      int32_vec_value {
+        value: 0
+        value: 0
+        value: 0
+        value: 0
+      }
+    }
+    list_length: 4
+    annotation: "`Datatype`: `vector<int>`\n\nThe padding sizes of input feature maps. The value must be `{left, right, top, bottom}`.\n\nFor transposed convolutions, the padding here denotes the `{kernel_size - 1 - actual_padding}`.This is an optional attribute, when the pad_mode is SAME or VALID, you don\'t need to specify this attribute."
+  }
+  annotation: "2D depth-wise transposed convolution, our equivalent implementations::\nFirstly, we dilate the input feature maps by `stride`:\n\n    dilated_input[batch, h, w, c] =\n        ((h mod stride[1] == 0) && (w mod stride[0] == 0))\n        ? input[batch, h / stride[1], h / stride[0], ic]\n        : 0\nSecondly, we do 2D-convolution on the feature maps:\n\n    output[batch, oh, ow, b * c] =\n        sum_{kw, kh} dilated_input[batch, oh + kh, ow + kw, c] *\n                     filter[b, kh, kw, c]\nIf pad is set:\n\n    actual_padding[n] = kernel (h or w) - 1 - pad[n]\n    padded_dilated_input[batch, h - actual_padding[2], w - actual_padding[0], c] =\n        dilated_input[batch, h, w, c]\n    padded_dilated_input[batch, 0 : actual_padding[2], 0 : actual_padding[0], c] = 0\n    padded_dilated_input[batch, h + actual_padding[2] : h + actual_padding[2] + actual_padding[3]\n                         w + actual_padding[0] : w + actual_padding[0] + actual_padding[1], c] = 0\nAnd here is how to calculate the output shape according to the attributes:\n\n(1). if pad_mode == \"`FLOOR`\":\n\n    output_shape = (in_shape - 1) * stride + dilation * (kernel - 1) + 1 - pad\n(2). if pad_mode == \"`CEIL`\":\n\n    output_shape = (in_shape - 1) * stride + dilation * (kernel - 1) + 1 - pad\n(3). if pad_mode == \"`SAME`\":\n\n    output_shape = in_shape * stride\n(4). if pad_mode == \"`VALID`\":\n\n    output_shape = (in_shape - 1) * stride + kernel\n"
+}
+op_defs {
+  name: "const-fix"
+  attrs {
+    name: "shape"
+    default_value {
+      int32_vec_value {
+      }
+    }
+    annotation: "`Datatype`: `vector<int>`\n\nThe shape of the output tensor"
+  }
+  attrs {
+    name: "data_type"
+    default_value {
+      string_value: ""
+    }
+    list_length: 1
+    annotation: "`Datatype`: `string`\n\nThe data type of the data of output feature maps, we use FLOAT32 as the default."
+  }
+  attrs {
+    name: "data"
+    default_value {
+      bytes_value {
+      }
+    }
+    annotation: "Constant values stored in this operator, \nfixed-point data in vector<char>.\n"
+  }
+  annotation: "A placeholder which stores the parameters, \nsuch as fixed-point weights, bias, etc."
+}
+op_defs {
+  name: "upload"
+  input_args {
+    name: "input"
+    data_type: 4
+    annotation: "The feature maps, can be x-dimension."
+  }
+  annotation: "An interface operator that holds the data achieved by a CPU-runner, and would be sent to a DPU-runner later."
+}
+op_defs {
+  name: "random_standard_normal"
+  attrs {
+    name: "shape"
+    default_value {
+      int32_vec_value {
+      }
+    }
+    annotation: "`Datatype`: `vector<int>`\n\nThe shape of the output tensor"
+  }
+  attrs {
+    name: "data_type"
+    default_value {
+      string_value: ""
+    }
+    list_length: 1
+    annotation: "`Datatype`: `string`\n\nThe data type of the data of output feature maps, we use FLOAT32 as the default."
+  }
+  attrs {
+    name: "seed"
+    occur_type: OPTIONAL
+    default_value {
+      int32_value: 0
+    }
+    list_length: 1
+    annotation: "`DataType`: `int`\n\nDefaults to 0. If either `seed` or `seed2` are set to be non-zero, the random number generator is seeded by the given seed. Otherwise, it is seeded by a random seed."
+  }
+  attrs {
+    name: "seed2"
+    occur_type: OPTIONAL
+    default_value {
+      int32_value: 0
+    }
+    list_length: 1
+    annotation: "`DataType`: `int`\n\nDefaults to 0. A second seed to avoid seed collision."
+  }
+  annotation: "Outputs random values from a normal distribution.\n\nAnd the generated values will have mean 0 and standard deviation 1."
+}
+op_defs {
+  name: "data-fix"
+  attrs {
+    name: "shape"
+    default_value {
+      int32_vec_value {
+      }
+    }
+    annotation: "`Datatype`: `vector<int>`\n\nThe shape of the output tensor"
+  }
+  attrs {
+    name: "data_type"
+    default_value {
+      string_value: ""
+    }
+    list_length: 1
+    annotation: "`Datatype`: `string`\n\nThe data type of the data of output feature maps, we use FLOAT32 as the default."
+  }
+  annotation: "A placeholder which stores the fixed-point input data, \ndata operator would always be fed by users."
+}
+op_defs {
+  name: "fix2float"
+  input_args {
+    name: "input"
+    data_type: 2
+    annotation: "The feature maps, can be x-dimension."
+  }
+  attrs {
+    name: "fix_point"
+    default_value {
+      int32_value: 0
+    }
+    list_length: 1
+    annotation: "`Datatype`: `int`\n\nThe fixed position of the output feature maps."
+  }
+  attrs {
+    name: "bit_width"
+    default_value {
+      int32_value: 0
+    }
+    list_length: 1
+    annotation: "`Datatype`: `int`\n\nThe bit width of the output feature maps."
+  }
+  attrs {
+    name: "round_mode"
+    default_value {
+      string_value: ""
+    }
+    list_length: 1
+    annotation: "`Datatype`: `string`\n\nThe round mode function for transforming the float data.The round mode is one of `{STD_ROUND, DPU_ROUND, PY3_ROUND}`\n\n(1). If the round_mode = `STD_ROUND`:\n\n    f(x) = std::round(x)\nFor example, f(2.3) = 2, f(2.5) = 3, f(-2.5) = -3, f(-2.6) = -3.\n\n(2). If the round_mode = `DPU_ROUND`:\n\n    f(x) = ((x < 0) && (x - floor(x) == 0.5))\n           ? std::ceil(x)\n           : std::round(x)\nFor example, f(2.3) = 2, f(2.5) = 3, f(-2.5) = -2, f(-2.6) = -3.\n\n(3). If the round_mode = `PY3_ROUND`:\n\nRound to even.For example, f(2.3) = 2, f(2.5) = 2, f(-2.5) = -2, f(-2.6) = -3.\n\n"
+  }
+  attrs {
+    name: "if_signed"
+    default_value {
+      bool_value: false
+    }
+    list_length: 1
+    annotation: "`Datatype`: `bool`\n\nIf the output feature maps is signed, this attr is set to be true."
+  }
+  annotation: "Transform the fixed value x into float output:\n\n(1). if_signed == true:\n\n    output = max(-pow(2, bit_width - 1),\n                 min(x, pow(2, bit_width - 1) - 1)))\n               * pow(2, -fix_point)\n(2). if_signed == false:\n\n    output = max(0, min(x, pow(2, bit_width) - 1)))\n               * pow(2, -fix_point)\n"
+}
+op_defs {
+  name: "div"
+  input_args {
+    name: "input"
+    occur_type: REQUIRED_AND_REPEATED
+    data_type: 4
+    annotation: "The feature maps, can be x-dimension."
+  }
+  annotation: "We support broadcasting operations:\n\n    \"add\": input[0] + input[1]\n    \"sub\": input[0] - input[1]\n    \"mul\": input[0] * input[1]\n    \"div\": input[0] / input[1]\n    \"min\": min(input[0], input[1])\n    \"max\": max(input[0], input[1])\nWhat is broadcasting?\n\nWhen operating on two arrays, we compare their shapes element-wise. \nIt starts with the trailing dimensions, and works its way forward.\n\nTwo dimensions are compatible when:\n\n1. they are equal, or\n2. one of them is 1\nIf these conditions are not met, a mismatch would be thrown, \nindicating that the arrays have incompatible shapes. \nThe size of the resulting array is the maximum size \nalong each dimension of the input arrays.\nFor example,\n\n(1). bias_add, which is a channel-wise operation:\n\n    input[0] (4d tensor): 1 x 112 x 112 x 64\n    input[1] (1d tensor):                 64\n    result   (4d tensor): 1 x 112 x 112 x 64\n(2). element-wise add, which is an element-wise operation:\n\n    input[0] (3d tensor): 32 x 32 x 10\n    input[1] (3d tensor): 32 x 32 x 10\n    result   (3d tensor): 32 x 32 x 10\n(3). more examples:\n\n    input[0] (4d tensor): 1 x 32 x 32 x 10\n    input[1] (3d tensor):     32 x  1 x  1\n    result   (4d tensor): 1 x 32 x 32 x 10\n(4). mismatched examples:\n\n    input[0] (4d tensor): 1 x 32 x 32 x 10\n    input[1] (3d tensor):      1 x 32 x  2\n    result              :         mismatch\n"
+}
+op_defs {
+  name: "min"
+  input_args {
+    name: "input"
+    occur_type: REQUIRED_AND_REPEATED
+    data_type: 4
+    annotation: "The feature maps, can be x-dimension."
+  }
+  annotation: "We support broadcasting operations:\n\n    \"add\": input[0] + input[1]\n    \"sub\": input[0] - input[1]\n    \"mul\": input[0] * input[1]\n    \"div\": input[0] / input[1]\n    \"min\": min(input[0], input[1])\n    \"max\": max(input[0], input[1])\nWhat is broadcasting?\n\nWhen operating on two arrays, we compare their shapes element-wise. \nIt starts with the trailing dimensions, and works its way forward.\n\nTwo dimensions are compatible when:\n\n1. they are equal, or\n2. one of them is 1\nIf these conditions are not met, a mismatch would be thrown, \nindicating that the arrays have incompatible shapes. \nThe size of the resulting array is the maximum size \nalong each dimension of the input arrays.\nFor example,\n\n(1). bias_add, which is a channel-wise operation:\n\n    input[0] (4d tensor): 1 x 112 x 112 x 64\n    input[1] (1d tensor):                 64\n    result   (4d tensor): 1 x 112 x 112 x 64\n(2). element-wise add, which is an element-wise operation:\n\n    input[0] (3d tensor): 32 x 32 x 10\n    input[1] (3d tensor): 32 x 32 x 10\n    result   (3d tensor): 32 x 32 x 10\n(3). more examples:\n\n    input[0] (4d tensor): 1 x 32 x 32 x 10\n    input[1] (3d tensor):     32 x  1 x  1\n    result   (4d tensor): 1 x 32 x 32 x 10\n(4). mismatched examples:\n\n    input[0] (4d tensor): 1 x 32 x 32 x 10\n    input[1] (3d tensor):      1 x 32 x  2\n    result              :         mismatch\n"
+}
+op_defs {
+  name: "fix"
+  input_args {
+    name: "input"
+    data_type: 4
+    annotation: "The feature maps, can be x-dimension."
+  }
+  attrs {
+    name: "fix_point"
+    default_value {
+      int32_value: 0
+    }
+    list_length: 1
+    annotation: "`Datatype`: `int`\n\nThe fixed position of the output feature maps."
+  }
+  attrs {
+    name: "bit_width"
+    default_value {
+      int32_value: 0
+    }
+    list_length: 1
+    annotation: "`Datatype`: `int`\n\nThe bit width of the output feature maps."
+  }
+  attrs {
+    name: "round_mode"
+    default_value {
+      string_value: ""
+    }
+    list_length: 1
+    annotation: "`Datatype`: `string`\n\nThe round mode function for transforming the float data.The round mode is one of `{STD_ROUND, DPU_ROUND, PY3_ROUND}`\n\n(1). If the round_mode = `STD_ROUND`:\n\n    f(x) = std::round(x)\nFor example, f(2.3) = 2, f(2.5) = 3, f(-2.5) = -3, f(-2.6) = -3.\n\n(2). If the round_mode = `DPU_ROUND`:\n\n    f(x) = ((x < 0) && (x - floor(x) == 0.5))\n           ? std::ceil(x)\n           : std::round(x)\nFor example, f(2.3) = 2, f(2.5) = 3, f(-2.5) = -2, f(-2.6) = -3.\n\n(3). If the round_mode = `PY3_ROUND`:\n\nRound to even.For example, f(2.3) = 2, f(2.5) = 2, f(-2.5) = -2, f(-2.6) = -3.\n\n"
+  }
+  attrs {
+    name: "if_signed"
+    default_value {
+      bool_value: false
+    }
+    list_length: 1
+    annotation: "`Datatype`: `bool`\n\nIf the output feature maps is signed, this attr is set to be true."
+  }
+  annotation: "fix operator transforms float-point value into fixed-point value into float-point format.\n\n(1). Firstly, we transform the float input feature map x into fixed value:\n\n    fixed_value = round(x * pow(2, fix_point))\nand then\n\n(2) transform the fixed value into float-point format:\n\n-> if_signed == true:\n\n    output = max(-pow(2, bit_width - 1),\n                 min(fixed_value, pow(2, bit_width - 1) - 1)))\n               * pow(2, -fix_point)\n-> if_signed == false:\n\n    output = max(0, min(fixed_value, pow(2, bit_width) - 1)))\n               * pow(2, -fix_point)\n"
+}
+op_defs {
+  name: "float2fix"
+  input_args {
+    name: "input"
+    data_type: 4
+    annotation: "The feature maps, can be x-dimension."
+  }
+  attrs {
+    name: "fix_point"
+    default_value {
+      int32_value: 0
+    }
+    list_length: 1
+    annotation: "`Datatype`: `int`\n\nThe fixed position of the output feature maps."
+  }
+  attrs {
+    name: "bit_width"
+    default_value {
+      int32_value: 0
+    }
+    list_length: 1
+    annotation: "`Datatype`: `int`\n\nThe bit width of the output feature maps."
+  }
+  attrs {
+    name: "round_mode"
+    default_value {
+      string_value: ""
+    }
+    list_length: 1
+    annotation: "`Datatype`: `string`\n\nThe round mode function for transforming the float data.The round mode is one of `{STD_ROUND, DPU_ROUND, PY3_ROUND}`\n\n(1). If the round_mode = `STD_ROUND`:\n\n    f(x) = std::round(x)\nFor example, f(2.3) = 2, f(2.5) = 3, f(-2.5) = -3, f(-2.6) = -3.\n\n(2). If the round_mode = `DPU_ROUND`:\n\n    f(x) = ((x < 0) && (x - floor(x) == 0.5))\n           ? std::ceil(x)\n           : std::round(x)\nFor example, f(2.3) = 2, f(2.5) = 3, f(-2.5) = -2, f(-2.6) = -3.\n\n(3). If the round_mode = `PY3_ROUND`:\n\nRound to even.For example, f(2.3) = 2, f(2.5) = 2, f(-2.5) = -2, f(-2.6) = -3.\n\n"
+  }
+  attrs {
+    name: "if_signed"
+    default_value {
+      bool_value: false
+    }
+    list_length: 1
+    annotation: "`Datatype`: `bool`\n\nIf the output feature maps is signed, this attr is set to be true."
+  }
+  annotation: "Transform the float value x into fixed value:\n\n    f(x) = round(x * pow(2, fix_point))\nThe round function is determined by the round_mode.\n\n(1). if_signed == true:\n\n    output = max(-pow(2, bit_width - 1),\n                 min(f(x), pow(2, bit_width - 1) - 1)))\n(2). if_signed == false:\n\n    output = max(0, min(f(x), pow(2, bit_width) - 1)))\n"
+}
+op_defs {
+  name: "transposed-conv3d-fix"
+  input_args {
+    name: "input"
+    data_type: 2
+    annotation: "An input tensor with shape `[batch, in_height, in_width, in_depth, in_channels]`."
+  }
+  input_args {
+    name: "weights"
+    data_type: 2
+    annotation: "A filter tensor with shape `[output_channels, kernel_height, kernel_width, kernel_depth, in_channels]`."
+  }
+  input_args {
+    name: "bias"
+    occur_type: OPTIONAL
+    data_type: 2
+    annotation: "A bias tensor with shape `[output_channels]`."
+  }
+  attrs {
+    name: "kernel"
+    default_value {
+      int32_vec_value {
+      }
+    }
+    list_length: 3
+    annotation: "`Datatype`: `vector<int>`\n\nThe kernel sizes of the filter. The value must be: `{kernel_width, kernel_height}`."
+  }
+  attrs {
+    name: "stride"
+    default_value {
+      int32_vec_value {
+      }
+    }
+    list_length: 3
+    annotation: "`Datatype`: `vector<int>`\n\nThe strides of the filter. The value must be: `{stride_width, stride_height}`."
+  }
+  attrs {
+    name: "dilation"
+    occur_type: OPTIONAL
+    default_value {
+      int32_vec_value {
+        value: 1
+        value: 1
+        value: 1
+      }
+    }
+    list_length: 3
+    annotation: "`Datatype`: `vector<int>`\n\nThe dilation of the filter. The value must be: `{dilation_width, dilation_height}`, The dilation in the batch or depth are 1 in default."
+  }
+  attrs {
+    name: "pad"
+    occur_type: OPTIONAL
+    default_value {
+      int32_vec_value {
+        value: 0
+        value: 0
+        value: 0
+        value: 0
+        value: 0
+        value: 0
+      }
+    }
+    list_length: 6
+    annotation: "`Datatype`: `vector<int>`\n\nThe padding sizes of input feature maps. The value must be `{left, right, top, bottom}`.\n\nFor transposed convolutions, the padding here denotes the `{kernel_size - 1 - actual_padding}`.This is an optional attribute, when the pad_mode is SAME or VALID, you don\'t need to specify this attribute."
+  }
+  attrs {
+    name: "nonlinear"
+    occur_type: OPTIONAL
+    default_value {
+      string_value: ""
+    }
+    list_length: 1
+    annotation: "`Datatype`: `string`\n\nnonlinear type, \"NONE\", \"RELU\", \"PRELU\", \"LEAKYRELU\",\"RELU6\",\"HSIGMOID\",\"HSWISH\"."
+  }
+}
+op_defs {
+  name: "conv2d"
+  input_args {
+    name: "input"
+    data_type: 4
+    annotation: "An input tensor with shape `[batch, in_height, in_width, in_channels]`."
+  }
+  input_args {
+    name: "weights"
+    data_type: 4
+    annotation: "A filter tensor with shape `[output_channels, kernel_height, kernel_width, in_channels]`."
+  }
+  input_args {
+    name: "bias"
+    occur_type: OPTIONAL
+    data_type: 4
+    annotation: "A bias tensor with shape `[output_channels]`."
+  }
+  attrs {
+    name: "kernel"
+    default_value {
+      int32_vec_value {
+      }
+    }
+    list_length: 2
+    annotation: "`Datatype`: `vector<int>`\n\nThe kernel sizes of the filter. The value must be: `{kernel_width, kernel_height}`."
+  }
+  attrs {
+    name: "stride"
+    default_value {
+      int32_vec_value {
+      }
+    }
+    list_length: 2
+    annotation: "`Datatype`: `vector<int>`\n\nThe strides of the filter. The value must be: `{stride_width, stride_height}`."
+  }
+  attrs {
+    name: "dilation"
+    occur_type: OPTIONAL
+    default_value {
+      int32_vec_value {
+        value: 1
+        value: 1
+      }
+    }
+    list_length: 2
+    annotation: "`Datatype`: `vector<int>`\n\nThe dilation of the filter. The value must be: `{dilation_width, dilation_height}`, The dilation in the batch or depth are 1 in default."
+  }
+  attrs {
+    name: "pad_mode"
+    default_value {
+      string_value: ""
+    }
+    list_length: 1
+    annotation: "`Datatype`: `string`\n\nWe support 4 padding mode: `FLOOR, CEIL, SAME, VALID`. For example, when you parsing models from other frameworks, `caffe, pytorch->\"FLOOR\", tensorflow->\"SAME\" or \"VALID\"`."
+  }
+  attrs {
+    name: "pad"
+    occur_type: OPTIONAL
+    default_value {
+      int32_vec_value {
+        value: 0
+        value: 0
+        value: 0
+        value: 0
+      }
+    }
+    list_length: 4
+    annotation: "`Datatype`: `vector<int>`\n\nThe padding sizes of input feature maps. The value must be `{left, right, top, bottom}`.\n\nFor transposed convolutions, the padding here denotes the `{kernel_size - 1 - actual_padding}`.This is an optional attribute, when the pad_mode is SAME or VALID, you don\'t need to specify this attribute."
+  }
+  annotation: "2D convolution.\n\n    output[batch, oh, ow, oc] =\n        sum_{kw, kh, ic} input[batch, strides[1] * oh + kh, strides[0] * ow + kw, ic] *\n                        filter[oc, kh, kw, ic]\n(1). if pad_mode == \"`FLOOR`\":\n\n    output_shape = floor((input_shape + pad - (kernel - 1) * dilation + 1) / stride) + 1\n(2). if pad_mode == \"`CEIL`\":\n\n    output_shape = ceil((input_shape + pad - (kernel - 1) * dilation + 1) / stride) + 1\n(3). if pad_mode == \"`SAME`\":\n\n    output_shape = ceil((input_shape + pad) / stride)\n(4). if pad_mode == \"`VALID`\":\n\n    output_shape = ceil((input_shape + pad - (kernel - 1) * dilation) / stride)\n"
+}
+op_defs {
+  name: "depthwise-conv2d"
+  input_args {
+    name: "input"
+    data_type: 4
+    annotation: "An input tensor with shape `[batch, in_height, in_width, in_channels]`."
+  }
+  input_args {
+    name: "weights"
+    data_type: 4
+    annotation: "A filter tensor with shape `[output_channels, kernel_height, kernel_width, in_channels]`."
+  }
+  input_args {
+    name: "bias"
+    occur_type: OPTIONAL
+    data_type: 4
+    annotation: "A bias tensor with shape `[output_channels]`."
+  }
+  attrs {
+    name: "kernel"
+    default_value {
+      int32_vec_value {
+      }
+    }
+    list_length: 2
+    annotation: "`Datatype`: `vector<int>`\n\nThe kernel sizes of the filter. The value must be: `{kernel_width, kernel_height}`."
+  }
+  attrs {
+    name: "stride"
+    default_value {
+      int32_vec_value {
+      }
+    }
+    list_length: 2
+    annotation: "`Datatype`: `vector<int>`\n\nThe strides of the filter. The value must be: `{stride_width, stride_height}`."
+  }
+  attrs {
+    name: "dilation"
+    occur_type: OPTIONAL
+    default_value {
+      int32_vec_value {
+        value: 1
+        value: 1
+      }
+    }
+    list_length: 2
+    annotation: "`Datatype`: `vector<int>`\n\nThe dilation of the filter. The value must be: `{dilation_width, dilation_height}`, The dilation in the batch or depth are 1 in default."
+  }
+  attrs {
+    name: "pad_mode"
+    default_value {
+      string_value: ""
+    }
+    list_length: 1
+    annotation: "`Datatype`: `string`\n\nWe support 4 padding mode: `FLOOR, CEIL, SAME, VALID`. For example, when you parsing models from other frameworks, `caffe, pytorch->\"FLOOR\", tensorflow->\"SAME\" or \"VALID\"`."
+  }
+  attrs {
+    name: "pad"
+    occur_type: OPTIONAL
+    default_value {
+      int32_vec_value {
+        value: 0
+        value: 0
+        value: 0
+        value: 0
+      }
+    }
+    list_length: 4
+    annotation: "`Datatype`: `vector<int>`\n\nThe padding sizes of input feature maps. The value must be `{left, right, top, bottom}`.\n\nFor transposed convolutions, the padding here denotes the `{kernel_size - 1 - actual_padding}`.This is an optional attribute, when the pad_mode is SAME or VALID, you don\'t need to specify this attribute."
+  }
+  annotation: "Depth-wise 2D convolution.\n\n    output[batch, oh, ow, b * c] =\n        sum_{kw, kh} input[batch, strides[1] * oh + kh, strides[0] * ow + kw, c] *\n                        filter[b, kh, kw, c]\n(1). if pad_mode == \"`FLOOR`\":\n\n    output_shape = floor((input_shape + pad - (kernel - 1) * dilation + 1) / stride) + 1\n(2). if pad_mode == \"`CEIL`\":\n\n    output_shape = ceil((input_shape + pad - (kernel - 1) * dilation + 1) / stride) + 1\n(3). if pad_mode == \"`SAME`\":\n\n    output_shape = ceil((input_shape + pad) / stride)\n(4). if pad_mode == \"`VALID`\":\n\n    output_shape = ceil((input_shape + pad - (kernel - 1) * dilation) / stride)\nFor example, in Tensorflow, tf.nn.depthwise_conv2d is:\n\n    output[b, i, j, k * channel_multiplier + q] = sum_{di, dj}\n        filter[di, dj, k, q] * input[b, stride[1] * i + rate[0] * di,\n                                        stride[2] * j + rate[1] * dk, k]\nGiven a 4D input tensor (\'NHWC\' or \'NCHW\' data formats) and a filter tensor of shape [filter_height, filter_width, in_channels, channel_multiplier]if we want to transform tf.nn.depthwise_conv2d into XIR depthwise-conv2d, then in XIR\n\n    output[b, i, j, k * channel_multiplier + q] = sum_{di, dj}\n        filter[q, di, dj, k] * input[b, stride[1] * i + rate[0] * di,\n                                        stride[0] * j + rate[1] * dk, k]\nIn another example, for convolution in caffe, if the attribute `group` euqals to the input channels of the input feature maps, then this convolutioncan be transformed into a XIR depthwise-conv2d."
+}
+op_defs {
+  name: "depthwise-conv2d-fix"
+  input_args {
+    name: "input"
+    data_type: 2
+    annotation: "An input tensor with shape `[batch, in_height, in_width, in_channels]`."
+  }
+  input_args {
+    name: "weights"
+    data_type: 2
+    annotation: "A filter tensor with shape `[output_channels, kernel_height, kernel_width, in_channels]`."
+  }
+  input_args {
+    name: "bias"
+    occur_type: OPTIONAL
+    data_type: 2
+    annotation: "A bias tensor with shape `[output_channels]`."
+  }
+  attrs {
+    name: "kernel"
+    default_value {
+      int32_vec_value {
+      }
+    }
+    list_length: 2
+    annotation: "`Datatype`: `vector<int>`\n\nThe kernel sizes of the filter. The value must be: `{kernel_width, kernel_height}`."
+  }
+  attrs {
+    name: "stride"
+    default_value {
+      int32_vec_value {
+      }
+    }
+    list_length: 2
+    annotation: "`Datatype`: `vector<int>`\n\nThe strides of the filter. The value must be: `{stride_width, stride_height}`."
+  }
+  attrs {
+    name: "dilation"
+    occur_type: OPTIONAL
+    default_value {
+      int32_vec_value {
+        value: 1
+        value: 1
+      }
+    }
+    list_length: 2
+    annotation: "`Datatype`: `vector<int>`\n\nThe dilation of the filter. The value must be: `{dilation_width, dilation_height}`, The dilation in the batch or depth are 1 in default."
+  }
+  attrs {
+    name: "pad"
+    occur_type: OPTIONAL
+    default_value {
+      int32_vec_value {
+        value: 0
+        value: 0
+        value: 0
+        value: 0
+      }
+    }
+    list_length: 4
+    annotation: "`Datatype`: `vector<int>`\n\nThe padding sizes of input feature maps. The value must be `{left, right, top, bottom}`.\n\nFor transposed convolutions, the padding here denotes the `{kernel_size - 1 - actual_padding}`."
+  }
+  attrs {
+    name: "nonlinear"
+    occur_type: OPTIONAL
+    default_value {
+      string_value: ""
+    }
+    list_length: 1
+    annotation: "`Datatype`: `string`\n\nnonlinear type, \"NONE\", \"RELU\", \"PRELU\", \"LEAKYRELU\",\"RELU6\",\"HSIGMOID\",\"HSWISH\"."
+  }
+}
+op_defs {
+  name: "add"
+  input_args {
+    name: "input"
+    occur_type: REQUIRED_AND_REPEATED
+    data_type: 4
+    annotation: "The feature maps, can be x-dimension."
+  }
+  annotation: "We support broadcasting operations:\n\n    \"add\": input[0] + input[1]\n    \"sub\": input[0] - input[1]\n    \"mul\": input[0] * input[1]\n    \"div\": input[0] / input[1]\n    \"min\": min(input[0], input[1])\n    \"max\": max(input[0], input[1])\nWhat is broadcasting?\n\nWhen operating on two arrays, we compare their shapes element-wise. \nIt starts with the trailing dimensions, and works its way forward.\n\nTwo dimensions are compatible when:\n\n1. they are equal, or\n2. one of them is 1\nIf these conditions are not met, a mismatch would be thrown, \nindicating that the arrays have incompatible shapes. \nThe size of the resulting array is the maximum size \nalong each dimension of the input arrays.\nFor example,\n\n(1). bias_add, which is a channel-wise operation:\n\n    input[0] (4d tensor): 1 x 112 x 112 x 64\n    input[1] (1d tensor):                 64\n    result   (4d tensor): 1 x 112 x 112 x 64\n(2). element-wise add, which is an element-wise operation:\n\n    input[0] (3d tensor): 32 x 32 x 10\n    input[1] (3d tensor): 32 x 32 x 10\n    result   (3d tensor): 32 x 32 x 10\n(3). more examples:\n\n    input[0] (4d tensor): 1 x 32 x 32 x 10\n    input[1] (3d tensor):     32 x  1 x  1\n    result   (4d tensor): 1 x 32 x 32 x 10\n(4). mismatched examples:\n\n    input[0] (4d tensor): 1 x 32 x 32 x 10\n    input[1] (3d tensor):      1 x 32 x  2\n    result              :         mismatch\n"
+}
+op_defs {
+  name: "maxpool2d"
+  input_args {
+    name: "input"
+    data_type: 4
+    annotation: "An input tensor with shape `[batch, in_height, in_width, in_channels]`."
+  }
+  attrs {
+    name: "kernel"
+    default_value {
+      int32_vec_value {
+      }
+    }
+    list_length: 2
+    annotation: "`Datatype`: `vector<int>`\n\nThe kernel sizes of the filter. The value must be: `{kernel_width, kernel_height}`."
+  }
+  attrs {
+    name: "stride"
+    default_value {
+      int32_vec_value {
+      }
+    }
+    list_length: 2
+    annotation: "`Datatype`: `vector<int>`\n\nThe strides of the filter. The value must be: `{stride_width, stride_height}`."
+  }
+  attrs {
+    name: "pad_mode"
+    default_value {
+      string_value: ""
+    }
+    list_length: 1
+    annotation: "`Datatype`: `string`\n\nWe support 4 padding mode: FLOOR, CEIL, SAME, VALID. For example, when you parsing models from other frameworks, `caffe->\"CEIL\",  tensorflow->\"SAME\" or \"VALID\", pytorch->\"FLOOR\"(default) or \"CEIL\".`"
+  }
+  attrs {
+    name: "pad"
+    occur_type: OPTIONAL
+    default_value {
+      int32_vec_value {
+        value: 0
+        value: 0
+        value: 0
+        value: 0
+      }
+    }
+    list_length: 4
+    annotation: "`Datatype`: `vector<int>`\n\nThe padding sizes of input feature maps. The value must be `{left, right, top, bottom}`."
+  }
+  attrs {
+    name: "global"
+    occur_type: OPTIONAL
+    default_value {
+      bool_value: false
+    }
+    list_length: 1
+    annotation: "`Datatype`: `bool`\n\nGlobal pooling, if global is set to be true, the width and height of output feature maps would be {1, 1}."
+  }
+  annotation: "2D max-pooling.\n\n    output[batch, oh, ow, c] =\n        max_{kw, kh} input[batch, strides[1] * oh + kh,\n           strides[0] * ow + kw, c] *\n(1). if pad_mode == \"`FLOOR`\":\n\n    output_shape = floor((input_shape + pad - kernel) / stride) + 1\n(2). if pad_mode == \"`CEIL`\":\n\n    output_shape = ceil((input_shape + pad - kernel) / stride) + 1\n(3). if pad_mode == \"`SAME`\":\n\n    output_shape = ceil((input_shape + pad) / stride)\n(4). if pad_mode == \"`VALID`\":\n\n    output_shape = ceil((input_shape + pad - kernel) / stride)\n"
+}
+op_defs {
+  name: "transposed-conv2d"
+  input_args {
+    name: "input"
+    data_type: 4
+    annotation: "An input tensor with shape `[batch, in_height, in_width, in_channels]`."
+  }
+  input_args {
+    name: "weights"
+    data_type: 4
+    annotation: "A filter tensor with shape `[output_channels, kernel_height, kernel_width, in_channels]`."
+  }
+  input_args {
+    name: "bias"
+    occur_type: OPTIONAL
+    data_type: 4
+    annotation: "A bias tensor with shape `[output_channels]`."
+  }
+  attrs {
+    name: "kernel"
+    default_value {
+      int32_vec_value {
+      }
+    }
+    list_length: 2
+    annotation: "`Datatype`: `vector<int>`\n\nThe kernel sizes of the filter. The value must be: `{kernel_width, kernel_height}`."
+  }
+  attrs {
+    name: "stride"
+    default_value {
+      int32_vec_value {
+      }
+    }
+    list_length: 2
+    annotation: "`Datatype`: `vector<int>`\n\nThe strides of the filter. The value must be: `{stride_width, stride_height}`."
+  }
+  attrs {
+    name: "dilation"
+    occur_type: OPTIONAL
+    default_value {
+      int32_vec_value {
+        value: 1
+        value: 1
+      }
+    }
+    list_length: 2
+    annotation: "`Datatype`: `vector<int>`\n\nThe dilation of the filter. The value must be: `{dilation_width, dilation_height}`, The dilation in the batch or depth are 1 in default."
+  }
+  attrs {
+    name: "pad_mode"
+    default_value {
+      string_value: ""
+    }
+    list_length: 1
+    annotation: "`Datatype`: `string`\n\nWe support 4 padding mode: `FLOOR, CEIL, SAME, VALID`. For example, when you parsing models from other frameworks, `caffe, pytorch->\"FLOOR\", tensorflow->\"SAME\" or \"VALID\"`."
+  }
+  attrs {
+    name: "pad"
+    occur_type: OPTIONAL
+    default_value {
+      int32_vec_value {
+        value: 0
+        value: 0
+        value: 0
+        value: 0
+      }
+    }
+    list_length: 4
+    annotation: "`Datatype`: `vector<int>`\n\nThe padding sizes of input feature maps. The value must be `{left, right, top, bottom}`.\n\nFor transposed convolutions, the padding here denotes the `{kernel_size - 1 - actual_padding}`.This is an optional attribute, when the pad_mode is SAME or VALID, you don\'t need to specify this attribute."
+  }
+  annotation: "2D transposed convolution, our equivalent implementations:\nFirstly, we dilate the input feature maps by `stride`:\n\n    dilated_input[batch, h, w, c] =\n        ((h mod stride[1] == 0) && (w mod stride[0] == 0))\n        ? input[batch, h / stride[1], h / stride[0], ic]\n        : 0\nSecondly, we do 2D-convolution on the feature maps:\n\n    output[batch, oh, ow, oc] =\n        sum_{kw, kh, ic} dilated_input[batch, oh + kh, ow + kw, ic] *\n                        filter[oc, kh, kw, ic]\nIf pad is set:\n\n    actual_padding[n] = kernel (h or w) - 1 - pad[n]\n    padded_dilated_input[batch, h - actual_padding[2], w - actual_padding[0], c] =\n        dilated_input[batch, h, w, c]\n    padded_dilated_input[batch, 0 : actual_padding[2], 0 : actual_padding[0], c] = 0\n    padded_dilated_input[batch, h + actual_padding[2] : h + actual_padding[2] + actual_padding[3]\n                         w + actual_padding[0] : w + actual_padding[0] + actual_padding[1], c] = 0\nAnd here is how to calculate the output shape according to the attributes:\n\n(1). if pad_mode == \"`FLOOR`\":\n\n    output_shape = (in_shape - 1) * stride + dilation * (kernel - 1) + 1 - pad\n(2). if pad_mode == \"`CEIL`\":\n\n    output_shape = (in_shape - 1) * stride + dilation * (kernel - 1) + 1 - pad\n(3). if pad_mode == \"`SAME`\":\n\n    output_shape = in_shape * stride\n(4). if pad_mode == \"`VALID`\":\n\n    output_shape = (in_shape - 1) * stride + kernel\nFor example, to transform a conv2d_transpose or Conv2DBackpropInput in Tensorflow into XIR:\nwe only need to change the filter in tensorflow into XIR format.\n\n(1). flip the filter along the dimension of width and height,\n\n(2). transpose the filter into `{oc, h, w, ic}`, ic equals the channel of input feature maps and oc equals to the channel of output feature maps."
+}
+op_defs {
+  name: "elu"
+  input_args {
+    name: "input"
+    data_type: 4
+    annotation: "The feature maps, can be x-dimension."
+  }
+  attrs {
+    name: "alpha"
+    occur_type: OPTIONAL
+    default_value {
+      float_value: 1
+    }
+    list_length: 1
+    annotation: "`Datatype`: `float`\n\nSlope of the activation function at x <= 0."
+  }
+  annotation: "Computes the elu function element-wise:\n\n    f(x) = x if x > 0.\n    f(x) = alpha * (exp(x) - 1) if x <= 0.\n"
+}
+op_defs {
+  name: "sub"
+  input_args {
+    name: "input"
+    occur_type: REQUIRED_AND_REPEATED
+    data_type: 4
+    annotation: "The feature maps, can be x-dimension."
+  }
+  annotation: "We support broadcasting operations:\n\n    \"add\": input[0] + input[1]\n    \"sub\": input[0] - input[1]\n    \"mul\": input[0] * input[1]\n    \"div\": input[0] / input[1]\n    \"min\": min(input[0], input[1])\n    \"max\": max(input[0], input[1])\nWhat is broadcasting?\n\nWhen operating on two arrays, we compare their shapes element-wise. \nIt starts with the trailing dimensions, and works its way forward.\n\nTwo dimensions are compatible when:\n\n1. they are equal, or\n2. one of them is 1\nIf these conditions are not met, a mismatch would be thrown, \nindicating that the arrays have incompatible shapes. \nThe size of the resulting array is the maximum size \nalong each dimension of the input arrays.\nFor example,\n\n(1). bias_add, which is a channel-wise operation:\n\n    input[0] (4d tensor): 1 x 112 x 112 x 64\n    input[1] (1d tensor):                 64\n    result   (4d tensor): 1 x 112 x 112 x 64\n(2). element-wise add, which is an element-wise operation:\n\n    input[0] (3d tensor): 32 x 32 x 10\n    input[1] (3d tensor): 32 x 32 x 10\n    result   (3d tensor): 32 x 32 x 10\n(3). more examples:\n\n    input[0] (4d tensor): 1 x 32 x 32 x 10\n    input[1] (3d tensor):     32 x  1 x  1\n    result   (4d tensor): 1 x 32 x 32 x 10\n(4). mismatched examples:\n\n    input[0] (4d tensor): 1 x 32 x 32 x 10\n    input[1] (3d tensor):      1 x 32 x  2\n    result              :         mismatch\n"
+}
+op_defs {
+  name: "conv3d"
+  input_args {
+    name: "input"
+    data_type: 4
+    annotation: "An input tensor with shape `[batch, in_height, in_width, depth, in_channels]`."
+  }
+  input_args {
+    name: "weights"
+    data_type: 4
+    annotation: "A filter tensor with shape `[output_channels, kernel_height, kernel_width, kernel_depth, in_channels]`."
+  }
+  input_args {
+    name: "bias"
+    occur_type: OPTIONAL
+    data_type: 4
+    annotation: "A bias tensor with shape `[output_channels]`."
+  }
+  attrs {
+    name: "kernel"
+    default_value {
+      int32_vec_value {
+      }
+    }
+    list_length: 3
+    annotation: "`Datatype`: `vector<int>`\n\nThe kernel sizes of the filter. The value must be: `{kernel_width, kernel_height, kernel_depth}`."
+  }
+  attrs {
+    name: "stride"
+    default_value {
+      int32_vec_value {
+      }
+    }
+    list_length: 3
+    annotation: "`Datatype`: `vector<int>`\n\nThe strides of the filter. The value must be: `{stride_width, stride_height, stride_depth}`."
+  }
+  attrs {
+    name: "dilation"
+    occur_type: OPTIONAL
+    default_value {
+      int32_vec_value {
+        value: 1
+        value: 1
+        value: 1
+      }
+    }
+    list_length: 3
+    annotation: "`Datatype`: `vector<int>`\n\nThe dilation of the filter. The value must be: `{dilation_width, dilation_height, dilation_depth}`, The dilation in the batch or depth are 1 in default."
+  }
+  attrs {
+    name: "pad_mode"
+    default_value {
+      string_value: ""
+    }
+    list_length: 1
+    annotation: "`Datatype`: `string`\n\nWe support 4 padding mode: `FLOOR, CEIL, SAME, VALID`. For example, when you parsing models from other frameworks, `caffe, pytorch->\"FLOOR\", tensorflow->\"SAME\" or \"VALID\"`."
+  }
+  attrs {
+    name: "pad"
+    occur_type: OPTIONAL
+    default_value {
+      int32_vec_value {
+        value: 0
+        value: 0
+        value: 0
+        value: 0
+        value: 0
+        value: 0
+      }
+    }
+    list_length: 6
+    annotation: "`Datatype`: `vector<int>`\n\nThe padding sizes of input feature maps. The value must be `{left, right, top, bottom, near, far}`.\n\nFor transposed convolutions, the padding here denotes the `{kernel_size - 1 - actual_padding}`.This is an optional attribute, when the pad_mode is SAME or VALID, you don\'t need to specify this attribute."
+  }
+  annotation: "3D convolution.\n\n"
+}
+op_defs {
+  name: "depthwise-conv3d"
+  input_args {
+    name: "input"
+    data_type: 4
+    annotation: "An input tensor with shape `[batch, in_height, in_width, depth, in_channels]`."
+  }
+  input_args {
+    name: "weights"
+    data_type: 4
+    annotation: "A filter tensor with shape `[output_channels, kernel_height, kernel_width, kernel_depth, in_channels]`."
+  }
+  input_args {
+    name: "bias"
+    occur_type: OPTIONAL
+    data_type: 4
+    annotation: "A bias tensor with shape `[output_channels]`."
+  }
+  attrs {
+    name: "kernel"
+    default_value {
+      int32_vec_value {
+      }
+    }
+    list_length: 3
+    annotation: "`Datatype`: `vector<int>`\n\nThe kernel sizes of the filter. The value must be: `{kernel_width, kernel_height, kernel_depth}`."
+  }
+  attrs {
+    name: "stride"
+    default_value {
+      int32_vec_value {
+      }
+    }
+    list_length: 3
+    annotation: "`Datatype`: `vector<int>`\n\nThe strides of the filter. The value must be: `{stride_width, stride_height, stride_depth}`."
+  }
+  attrs {
+    name: "dilation"
+    occur_type: OPTIONAL
+    default_value {
+      int32_vec_value {
+        value: 1
+        value: 1
+        value: 1
+      }
+    }
+    list_length: 3
+    annotation: "`Datatype`: `vector<int>`\n\nThe dilation of the filter. The value must be: `{dilation_width, dilation_height, dilation_depth}`, The dilation in the batch or depth are 1 in default."
+  }
+  attrs {
+    name: "pad_mode"
+    default_value {
+      string_value: ""
+    }
+    list_length: 1
+    annotation: "`Datatype`: `string`\n\nWe support 4 padding mode: `FLOOR, CEIL, SAME, VALID`. For example, when you parsing models from other frameworks, `caffe, pytorch->\"FLOOR\", tensorflow->\"SAME\" or \"VALID\"`."
+  }
+  attrs {
+    name: "pad"
+    occur_type: OPTIONAL
+    default_value {
+      int32_vec_value {
+        value: 0
+        value: 0
+        value: 0
+        value: 0
+        value: 0
+        value: 0
+      }
+    }
+    list_length: 6
+    annotation: "`Datatype`: `vector<int>`\n\nThe padding sizes of input feature maps. The value must be `{left, right, top, bottom, near, far}`.\n\nFor transposed convolutions, the padding here denotes the `{kernel_size - 1 - actual_padding}`.This is an optional attribute, when the pad_mode is SAME or VALID, you don\'t need to specify this attribute."
+  }
+  annotation: "Depth-wise 3D convolution.\n\n"
+}
+op_defs {
+  name: "celu"
+  input_args {
+    name: "input"
+    data_type: 4
+    annotation: "The feature maps, can be x-dimension."
+  }
+  attrs {
+    name: "alpha"
+    occur_type: OPTIONAL
+    default_value {
+      float_value: 1
+    }
+    list_length: 1
+    annotation: "`Datatype`: `float`\n\nSlope of the activation function."
+  }
+  annotation: "Computes the celu function element-wise:\n\n    f(x) = max(0, x) + min(0, alpha * (exp(x / alpha) - 1)).\n"
+}
+op_defs {
+  name: "shape"
+  input_args {
+    name: "input"
+    data_type: 4
+    annotation: "The feature maps, can be x-dimension."
+  }
+  annotation: "Return the shape of the input feature maps."
+}
+op_defs {
+  name: "pool-fix"
+  input_args {
+    name: "input"
+    data_type: 2
+    annotation: "An input tensor with shape `[batch, in_height, in_width, in_channels]`."
+  }
+  attrs {
+    name: "kernel"
+    default_value {
+      int32_vec_value {
+      }
+    }
+    list_length: 2
+    annotation: "`Datatype`: `vector<int>`\n\nThe kernel sizes of the filter. The value must be: `{kernel_width, kernel_height}`."
+  }
+  attrs {
+    name: "stride"
+    default_value {
+      int32_vec_value {
+      }
+    }
+    list_length: 2
+    annotation: "`Datatype`: `vector<int>`\n\nThe strides of the filter. The value must be: `{stride_width, stride_height}`."
+  }
+  attrs {
+    name: "pad"
+    occur_type: OPTIONAL
+    default_value {
+      int32_vec_value {
+        value: 0
+        value: 0
+        value: 0
+        value: 0
+      }
+    }
+    list_length: 4
+    annotation: "`Datatype`: `vector<int>`\n\nThe padding sizes of input feature maps. The value must be `{left, right, top, bottom}`. This is an optional attribute, when the pad_mode is SAME or VALID, you don\'t need to specify this attribute."
+  }
+  attrs {
+    name: "type"
+    default_value {
+      string_value: ""
+    }
+    list_length: 1
+    annotation: "`Datatype`: `string`\n\nDpu pooling type, \"MAX\", \"AVG\"."
+  }
+}
+op_defs {
+  name: "transposed-conv3d"
+  input_args {
+    name: "input"
+    data_type: 4
+    annotation: "An input tensor with shape `[batch, in_height, in_width, depth, in_channels]`."
+  }
+  input_args {
+    name: "weights"
+    data_type: 4
+    annotation: "A filter tensor with shape `[output_channels, kernel_height, kernel_width, kernel_depth, in_channels]`."
+  }
+  input_args {
+    name: "bias"
+    occur_type: OPTIONAL
+    data_type: 4
+    annotation: "A bias tensor with shape `[output_channels]`."
+  }
+  attrs {
+    name: "kernel"
+    default_value {
+      int32_vec_value {
+      }
+    }
+    list_length: 3
+    annotation: "`Datatype`: `vector<int>`\n\nThe kernel sizes of the filter. The value must be: `{kernel_width, kernel_height, kernel_depth}`."
+  }
+  attrs {
+    name: "stride"
+    default_value {
+      int32_vec_value {
+      }
+    }
+    list_length: 3
+    annotation: "`Datatype`: `vector<int>`\n\nThe strides of the filter. The value must be: `{stride_width, stride_height, stride_depth}`."
+  }
+  attrs {
+    name: "dilation"
+    occur_type: OPTIONAL
+    default_value {
+      int32_vec_value {
+        value: 1
+        value: 1
+        value: 1
+      }
+    }
+    list_length: 3
+    annotation: "`Datatype`: `vector<int>`\n\nThe dilation of the filter. The value must be: `{dilation_width, dilation_height, dilation_depth}`, The dilation in the batch or depth are 1 in default."
+  }
+  attrs {
+    name: "pad_mode"
+    default_value {
+      string_value: ""
+    }
+    list_length: 1
+    annotation: "`Datatype`: `string`\n\nWe support 4 padding mode: `FLOOR, CEIL, SAME, VALID`. For example, when you parsing models from other frameworks, `caffe, pytorch->\"FLOOR\", tensorflow->\"SAME\" or \"VALID\"`."
+  }
+  attrs {
+    name: "pad"
+    occur_type: OPTIONAL
+    default_value {
+      int32_vec_value {
+        value: 0
+        value: 0
+        value: 0
+        value: 0
+        value: 0
+        value: 0
+      }
+    }
+    list_length: 6
+    annotation: "`Datatype`: `vector<int>`\n\nThe padding sizes of input feature maps. The value must be `{left, right, top, bottom, near, far}`.\n\nFor transposed convolutions, the padding here denotes the `{kernel_size - 1 - actual_padding}`.This is an optional attribute, when the pad_mode is SAME or VALID, you don\'t need to specify this attribute."
+  }
+  annotation: "Transposed 3D convolution.\n\n"
+}
+op_defs {
+  name: "gelu"
+  input_args {
+    name: "input"
+    data_type: 4
+    annotation: "The feature maps, can be x-dimension."
+  }
+  annotation: "Computes the gelu function element-wise:\n\n    f(x) = x * 1 / 2 * (1 + erf(x / sqrt(2))).\n"
+}
+op_defs {
+  name: "max"
+  input_args {
+    name: "input"
+    occur_type: REQUIRED_AND_REPEATED
+    data_type: 4
+    annotation: "The feature maps, can be x-dimension."
+  }
+  annotation: "We support broadcasting operations:\n\n    \"add\": input[0] + input[1]\n    \"sub\": input[0] - input[1]\n    \"mul\": input[0] * input[1]\n    \"div\": input[0] / input[1]\n    \"min\": min(input[0], input[1])\n    \"max\": max(input[0], input[1])\nWhat is broadcasting?\n\nWhen operating on two arrays, we compare their shapes element-wise. \nIt starts with the trailing dimensions, and works its way forward.\n\nTwo dimensions are compatible when:\n\n1. they are equal, or\n2. one of them is 1\nIf these conditions are not met, a mismatch would be thrown, \nindicating that the arrays have incompatible shapes. \nThe size of the resulting array is the maximum size \nalong each dimension of the input arrays.\nFor example,\n\n(1). bias_add, which is a channel-wise operation:\n\n    input[0] (4d tensor): 1 x 112 x 112 x 64\n    input[1] (1d tensor):                 64\n    result   (4d tensor): 1 x 112 x 112 x 64\n(2). element-wise add, which is an element-wise operation:\n\n    input[0] (3d tensor): 32 x 32 x 10\n    input[1] (3d tensor): 32 x 32 x 10\n    result   (3d tensor): 32 x 32 x 10\n(3). more examples:\n\n    input[0] (4d tensor): 1 x 32 x 32 x 10\n    input[1] (3d tensor):     32 x  1 x  1\n    result   (4d tensor): 1 x 32 x 32 x 10\n(4). mismatched examples:\n\n    input[0] (4d tensor): 1 x 32 x 32 x 10\n    input[1] (3d tensor):      1 x 32 x  2\n    result              :         mismatch\n"
+}
+op_defs {
+  name: "relu6"
+  input_args {
+    name: "input"
+    data_type: 4
+    annotation: "The feature maps, can be x-dimension."
+  }
+  annotation: "Computes the relu6 function element-wise:\n\n    f(x) = min(max(x, 0), 6).\n"
+}
+op_defs {
+  name: "neg"
+  input_args {
+    name: "input"
+    data_type: 4
+    annotation: "The feature maps, can be x-dimension."
+  }
+  annotation: "This function computes the numerical negative value element-wise.\n\n    f(x) = -x\n"
+}
+op_defs {
+  name: "depthwise-fix"
+  input_args {
+    name: "input"
+    occur_type: REQUIRED_AND_REPEATED
+    data_type: 2
+    annotation: "The feature maps, can be x-dimension. depthwise-fix operator implements channel-wise operations."
+  }
+  attrs {
+    name: "type"
+    occur_type: OPTIONAL
+    default_value {
+      string_value: "MUL"
+    }
+    list_length: 1
+    annotation: "`Datatype`: `string`\n\ndepthwise type, \"ADD\", \"MUL\". Default is \"ADD\""
+  }
+}
+op_defs {
+  name: "priorbox"
+  input_args {
+    name: "input"
+    occur_type: REQUIRED_AND_REPEATED
+    data_type: 4
+    annotation: "`[batch, in_height, in_width, in_channels]`."
+  }
+  attrs {
+    name: "min_sizes"
+    default_value {
+      float_vec_value {
+      }
+    }
+    annotation: "`Datatype`: `vector<float>`\n\nminimum box size (in pixels)"
+  }
+  attrs {
+    name: "max_sizes"
+    occur_type: OPTIONAL
+    default_value {
+      float_vec_value {
+      }
+    }
+    annotation: "`Datatype`: `vector<float>`\n\nmaximum box size (in pixels)"
+  }
+  attrs {
+    name: "aspect_ratio"
+    occur_type: OPTIONAL
+    default_value {
+      float_vec_value {
+      }
+    }
+    annotation: "`Datatype`: `vector<float>`\n\nvarious of aspect ratios"
+  }
+  attrs {
+    name: "flip"
+    default_value {
+      bool_value: false
+    }
+    list_length: 1
+    annotation: "`Datatype`: `bool`\n\nif true, will flip each aspect ratio, default True"
+  }
+  attrs {
+    name: "clip"
+    default_value {
+      bool_value: false
+    }
+    list_length: 1
+    annotation: "`Datatype`: `bool`\n\nif true, will clip the prior so that it is within [0, 1]."
+  }
+  attrs {
+    name: "variance"
+    default_value {
+      float_vec_value {
+      }
+    }
+    annotation: "`Datatype`: `vector<float>`\n\nvariance for adjusting the prior bboxes"
+  }
+  attrs {
+    name: "step"
+    default_value {
+      float_vec_value {
+      }
+    }
+    annotation: "`Datatype`: `vector<float>`\n\nstep size"
+  }
+  attrs {
+    name: "offset"
+    default_value {
+      float_value: 0
+    }
+    list_length: 1
+    annotation: "`Datatype`: `vector<float>`\n\noffset to the top left corner of each cell."
+  }
+}
+op_defs {
+  name: "inner-product"
+  input_args {
+    name: "input"
+    data_type: 4
+    annotation: "The feature maps, can be x-dimension."
+  }
+  input_args {
+    name: "weights"
+    data_type: 4
+    annotation: "The feature maps, can be x-dimension."
+  }
+  input_args {
+    name: "bias"
+    occur_type: OPTIONAL
+    data_type: 4
+    annotation: "1-dimension, OC"
+  }
+  attrs {
+    name: "axis"
+    default_value {
+      int32_value: 0
+    }
+    list_length: 1
+    annotation: "`Datatype`: `int`\n\n[axis:-1] for flatten"
+  }
+  annotation: "Do inner-product for the input feature maps.\n\nFor example, the shape of the input is [n, a, b, c], axis = 1, Firstly, flatten the input feature maps starting from the `axis` dimension to the end. the input would be reshaped to [n, a * b * c].\n\nSecondly, the weights would be reshaped to [k, a * b * c], \n\nThirdly, the inner-product would be implemented:\n\n    output[n, k] = sum_{i} input(n, i) * weights(k, i)\nThe number of bias equals to k."
+}
+op_defs {
+  name: "sigmoid"
+  input_args {
+    name: "input"
+    data_type: 4
+    annotation: "The feature maps, can be x-dimension."
+  }
+  annotation: "Computes the sigmoid function element-wise:\n\n    f(x) = 1 / (1 + exp(-x)).\n"
+}
+op_defs {
+  name: "pad"
+  input_args {
+    name: "input"
+    data_type: 4
+    annotation: "The feature maps, can be x-dimension."
+  }
+  attrs {
+    name: "paddings"
+    default_value {
+      int32_vec_value {
+      }
+    }
+    annotation: "`Datatype`: `vector<int>`\n\npad along different dimensions, the number of value in paddings should be 2 times the number of dimensions of input feature maps.The n-th dimension of the output feature maps equals to:\n\n    (n-th dim) out =\n        paddings[2n] + (n-th dim) in + paddings[2n + 1]"
+  }
+  attrs {
+    name: "mode"
+    default_value {
+      string_value: ""
+    }
+    list_length: 1
+    annotation: "`Datatype`: `string`\n\n`CONSTANT`,`REFLECT` or `SYMMETRIC`"
+  }
+  attrs {
+    name: "constant_values"
+    occur_type: OPTIONAL
+    default_value {
+      float_vec_value {
+      }
+    }
+    annotation: "`Datatype`: `vector<float>`\n\nthe value set into the padded locations, 2 * len(paddings)"
+  }
+  annotation: "For example,\n\nif the mode = \"CONSTANT\"\n\n    input = [[1, 2],\n             [3, 4]]\n    paddings = [0, 1, 1, 0]\n    output = [[0, 1, 2],\n              [0, 3, 4],\n              [0, 0, 0]]\nif the mode = \"REFLECT\"\n\n    input = [[1, 2],\n             [3, 4]]\n    paddings = [0, 1, 1, 0]\n    output = [[2, 1, 2],\n              [4, 3, 4],\n              [2, 1, 2]]\nif the mode = \"SYMMETRIC\"\n\n    input = [[1, 2],\n             [3, 4]]\n    paddings = [0, 1, 1, 0]\n    output = [[1, 1, 2],\n              [3, 3, 4],\n              [3, 3, 4]]\n"
+}
+op_defs {
+  name: "upsample-fix"
+  input_args {
+    name: "input"
+    data_type: 2
+    annotation: "The feature maps, can be x-dimension."
+  }
+  input_args {
+    name: "size"
+    occur_type: OPTIONAL
+    annotation: "Constant values denotes the shape of the output feature maps."
+  }
+  attrs {
+    name: "mode"
+    default_value {
+      string_value: ""
+    }
+    list_length: 1
+    annotation: "`Datatype`: `string`\n\nNEAREST, BILINEAR or TRILINEAR"
+  }
+  attrs {
+    name: "align_corners"
+    occur_type: OPTIONAL
+    default_value {
+      bool_value: false
+    }
+    list_length: 1
+    annotation: "`Datatype`: `bool`\n\nIf true, preserving the values at the corner pixels. Defaults to false."
+  }
+  attrs {
+    name: "half_pixel_centers"
+    occur_type: OPTIONAL
+    default_value {
+      bool_value: false
+    }
+    list_length: 1
+    annotation: "`Datatype`: `bool`\n\nIf true, use half-pixel as centers."
+  }
+  attrs {
+    name: "scale"
+    default_value {
+      float_vec_value {
+      }
+    }
+    list_length: 2
+    annotation: "`DataType` : `std::vector<float>` {scale_w, scale_h}"
+  }
+}
+op_defs {
+  name: "swish"
+  input_args {
+    name: "input"
+    data_type: 4
+    annotation: "The feature maps, can be x-dimension."
+  }
+  annotation: "Computes the swish function element-wise:\n\n    f(x) = x * sigmoid(x).\n"
+}
+op_defs {
+  name: "identity"
+  input_args {
+    name: "input"
+    data_type: 2
+    annotation: "The feature maps, can be x-dimension."
+  }
+  annotation: "An interface operator that holds the data. Do nothing here."
+}
+op_defs {
+  name: "tanh"
+  input_args {
+    name: "input"
+    data_type: 4
+    annotation: "The feature maps, can be x-dimension."
+  }
+  annotation: "Computes the tanh function element-wise:\n\n    f(x) = tanh(x).\n"
+}
+op_defs {
+  name: "hard-sigmoid-fix"
+  input_args {
+    name: "input"
+    data_type: 4
+    annotation: "The feature maps, can be x-dimension."
+  }
+  annotation: "Computes the hard sigmoid function element-wise:\n\n    f(x) = relu6(x + 3) * 2731 / 2 ^ 14.\n"
+}
+op_defs {
+  name: "hard-tanh"
+  input_args {
+    name: "input"
+    data_type: 4
+    annotation: "The feature maps, can be x-dimension."
+  }
+  annotation: "Computes the hard tanh function element-wise:\n\n    f(x) = clip(x, -1, 1).\n"
+}
+op_defs {
+  name: "threshold"
+  input_args {
+    name: "input"
+    data_type: 2
+    annotation: "The feature maps, can be x-dimension."
+  }
+  input_args {
+    name: "threshold"
+    data_type: 2
+    annotation: "1-dimension, 24-bit XINT"
+  }
+  annotation: "Threshold operator is used to transform fixed-point values \nto fixed-point values of different bit width.\n\n    24 bit threshold = 13-bit base + 10-bit delta + 1-bit signal.\nbase is a channel-wise parameter, an int_13 number.\n11 bit interger and 2 bit decimal.\n\ndelta is a channel-wise parameter, an uint_10 number.\n8 bit interger and 2 bit decimal.\n\nThe output can be calculated by this function:\n\n    base + out * delta <= in < base + (out + 1) * delta\nIn addition, signal indicates whether actual step is a positive number.\n0 indicates positive, 1 is negative.\n"
+}
+op_defs {
+  name: "reduction_mean"
+  input_args {
+    name: "input"
+    data_type: 4
+    annotation: "The feature maps, can be x-dimension."
+  }
+  attrs {
+    name: "axis"
+    default_value {
+      int32_vec_value {
+      }
+    }
+    annotation: "`Datatype`: `vector<int>`\n\nThe dimensions to reduce."
+  }
+  attrs {
+    name: "keep_dims"
+    default_value {
+      bool_value: false
+    }
+    list_length: 1
+    annotation: "`Datatype`: `bool`\n\nspecify whether the reduced dimension is kept or not."
+  }
+  annotation: "Implement the mean along each of the axis dimensions."
+}
+op_defs {
+  name: "gstiling"
+  input_args {
+    name: "input"
+    data_type: 4
+    annotation: "The feature maps, can be x-dimension."
+  }
+  attrs {
+    name: "reverse"
+    default_value {
+      bool_value: false
+    }
+    list_length: 1
+    annotation: "`Datatype`: `bool`\n\nif reverse"
+  }
+  attrs {
+    name: "stride"
+    default_value {
+      int32_value: 0
+    }
+    list_length: 1
+    annotation: "`Datatype`: `int`\n\nstride for feature maps"
+  }
+}
+op_defs {
+  name: "mul"
+  input_args {
+    name: "input"
+    occur_type: REQUIRED_AND_REPEATED
+    data_type: 4
+    annotation: "The feature maps, can be x-dimension."
+  }
+  annotation: "We support broadcasting operations:\n\n    \"add\": input[0] + input[1]\n    \"sub\": input[0] - input[1]\n    \"mul\": input[0] * input[1]\n    \"div\": input[0] / input[1]\n    \"min\": min(input[0], input[1])\n    \"max\": max(input[0], input[1])\nWhat is broadcasting?\n\nWhen operating on two arrays, we compare their shapes element-wise. \nIt starts with the trailing dimensions, and works its way forward.\n\nTwo dimensions are compatible when:\n\n1. they are equal, or\n2. one of them is 1\nIf these conditions are not met, a mismatch would be thrown, \nindicating that the arrays have incompatible shapes. \nThe size of the resulting array is the maximum size \nalong each dimension of the input arrays.\nFor example,\n\n(1). bias_add, which is a channel-wise operation:\n\n    input[0] (4d tensor): 1 x 112 x 112 x 64\n    input[1] (1d tensor):                 64\n    result   (4d tensor): 1 x 112 x 112 x 64\n(2). element-wise add, which is an element-wise operation:\n\n    input[0] (3d tensor): 32 x 32 x 10\n    input[1] (3d tensor): 32 x 32 x 10\n    result   (3d tensor): 32 x 32 x 10\n(3). more examples:\n\n    input[0] (4d tensor): 1 x 32 x 32 x 10\n    input[1] (3d tensor):     32 x  1 x  1\n    result   (4d tensor): 1 x 32 x 32 x 10\n(4). mismatched examples:\n\n    input[0] (4d tensor): 1 x 32 x 32 x 10\n    input[1] (3d tensor):      1 x 32 x  2\n    result              :         mismatch\n"
+}
+op_defs {
+  name: "hard-swish"
+  input_args {
+    name: "input"
+    data_type: 4
+    annotation: "The feature maps, can be x-dimension."
+  }
+  annotation: "Computes the hard swish function element-wise:\n\n    f(x) = x * relu6(x + 3) / 6.\n"
+}
+op_defs {
+  name: "reduction_sum"
+  input_args {
+    name: "input"
+    data_type: 4
+    annotation: "The feature maps, can be x-dimension."
+  }
+  attrs {
+    name: "axis"
+    default_value {
+      int32_vec_value {
+      }
+    }
+    annotation: "`Datatype`: `vector<int>`\n\nThe dimensions to reduce."
+  }
+  attrs {
+    name: "keep_dims"
+    default_value {
+      bool_value: false
+    }
+    list_length: 1
+    annotation: "`Datatype`: `bool`\n\nspecify whether the reduced dimension is kept or not."
+  }
+  annotation: "Implement the sum along each of the axis dimensions."
+}
+op_defs {
+  name: "leaky-relu"
+  input_args {
+    name: "input"
+    data_type: 4
+    annotation: "The feature maps, can be x-dimension."
+  }
+  attrs {
+    name: "alpha"
+    default_value {
+      float_value: 0
+    }
+    list_length: 1
+    annotation: "`Datatype`: `float`\n\nSlope of the activation function at x < 0."
+  }
+  annotation: "Computes the leaky relu function element-wise:\n\n    f(x) = min(x, 0) + alpha * min(x, 0).\n"
+}
+op_defs {
+  name: "reduction_max"
+  input_args {
+    name: "input"
+    data_type: 4
+    annotation: "The feature maps, can be x-dimension."
+  }
+  attrs {
+    name: "axis"
+    default_value {
+      int32_vec_value {
+      }
+    }
+    annotation: "`Datatype`: `vector<int>`\n\nThe dimensions to reduce."
+  }
+  attrs {
+    name: "keep_dims"
+    default_value {
+      bool_value: false
+    }
+    list_length: 1
+    annotation: "`Datatype`: `bool`\n\nspecify whether the reduced dimension is kept or not."
+  }
+  annotation: "Find the maximum value along each of the axis dimensions."
+}
+op_defs {
+  name: "pixel-shuffle"
+  input_args {
+    name: "input"
+    data_type: 4
+    annotation: "`[batch, in_height, in_width, in_channels]`."
+  }
+  attrs {
+    name: "scale"
+    default_value {
+      int32_value: 0
+    }
+    list_length: 1
+    annotation: "`Datatype`: `int`\n\nscale for PixelShuffle"
+  }
+  attrs {
+    name: "upscale"
+    default_value {
+      bool_value: false
+    }
+    list_length: 1
+    annotation: "`Datatype`: `bool`\n\nupscale or downscale PixelShuffle."
+  }
+  annotation: "https://pytorch.org/docs/stable/generated/torch.nn.PixelShuffle.html"
+}
+op_defs {
+  name: "l2_normalize"
+  input_args {
+    name: "input"
+    data_type: 4
+    annotation: "The feature maps, can be x-dimension."
+  }
+  attrs {
+    name: "axis"
+    occur_type: OPTIONAL
+    default_value {
+      int32_vec_value {
+      }
+    }
+    annotation: "`Datatype`: `vector<int>`\n\nDimension along which to normalize."
+  }
+  attrs {
+    name: "epsilon"
+    occur_type: OPTIONAL
+    default_value {
+      double_value: 1e-12
+    }
+    list_length: 1
+    annotation: "`Datatype`: `double`\n\nA lower bound value for the norm."
+  }
+  annotation: "For a 1-D tensor with `axis = 0`, computes\n\n    output = x / sqrt(max(sum(x ^ 2), epsilon))\nFor x with more dimensions,\nindependently normalizes each 1-D slice along dimension axis.\n"
+}
+op_defs {
+  name: "data"
+  attrs {
+    name: "shape"
+    default_value {
+      int32_vec_value {
+      }
+    }
+    annotation: "`Datatype`: `vector<int>`\n\nThe shape of the output tensor"
+  }
+  attrs {
+    name: "data_type"
+    default_value {
+      string_value: ""
+    }
+    list_length: 1
+    annotation: "`Datatype`: `string`\n\nThe data type of the data of output feature maps, we use FLOAT32 as the default."
+  }
+  annotation: "A placeholder which stores the float-point input data, \ndata operator would always be fed by users."
+}
+op_defs {
+  name: "placeholder"
+  input_args {
+    name: "input"
+    data_type: 4
+    annotation: "The feature maps, can be x-dimension."
+  }
+  annotation: "An interface operator that holds the data. Do nothing here."
+}
+op_defs {
+  name: "selu"
+  input_args {
+    name: "input"
+    data_type: 4
+    annotation: "The feature maps, can be x-dimension."
+  }
+  annotation: "Computes the selu function element-wise:\n\n    f(x) = scale * (max(0, x) + min(0, alpha * (exp(x) - 1))).\nalpha and scale are constant value.\n"
+}
+op_defs {
+  name: "reshape"
+  input_args {
+    name: "input"
+    data_type: 4
+    annotation: "The feature maps, can be x-dimension."
+  }
+  input_args {
+    name: "shape"
+    occur_type: OPTIONAL
+    annotation: "Constant values that define the shape of the output."
+  }
+  attrs {
+    name: "shape"
+    occur_type: OPTIONAL
+    default_value {
+      int32_vec_value {
+        value: 0
+      }
+    }
+    annotation: "`Datatype`: `vector<int>`\n\nConstant values that define the shape of the output."
+  }
+  annotation: "Reshape the feature maps or constant data into new shape without changing the layout of data in memory."
+}
